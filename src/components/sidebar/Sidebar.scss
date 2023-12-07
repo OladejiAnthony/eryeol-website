@@ -1,0 +1,143 @@
+@import '../../App.scss';
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+
+    .bg {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        z-index: 999;
+        //background-color: white;
+
+        @include mobile {
+            width: 200px;
+        }
+
+        .bg-link {
+            width: 100%;
+            height: 100%;
+            gap: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 64px;
+
+            .links {
+                //position: absolute;
+                width: 188px;
+                height: 188px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 12px;
+    
+                @include mobile {
+                    padding-bottom: 300px;
+                }
+    
+                a {
+                    color: #0B0A0F;
+                    text-align: center;
+                    font-family: Geist;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%; /* 38.4px */
+                    letter-spacing: -0.64px;
+    
+                    @include mobile {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .textContainer {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                width: 195px;
+
+                p {
+                    color: #4A4752;
+                    font-family: Geist;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 21px */
+                    letter-spacing: -0.28px;
+                }
+            }
+
+            .socials {
+                width: 320px;
+                height: 77px;
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+
+                a {
+                    color: #BCB8C6;
+                    font-family: Geist;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 21px */
+                    letter-spacing: -0.28px;
+                }
+
+                div {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 16px;
+                    align-self: stretch;
+                    a {
+                        display: flex;
+                        padding: 10px;
+                        align-items: flex-start;
+                        gap: 10px;
+                        border-radius: 200px;
+                        border: 1px solid #9797A6;
+                        background: #FFF;
+                    }
+                }
+            }
+
+
+        }
+        
+        
+    }
+
+    button {
+        position: fixed;
+        width: 71px;
+        height: 50px;
+        top: 60px;
+        right: 85px;
+        z-index: 999;
+        display: flex;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 200px;
+        border: 1px solid rgba(255, 255, 255, 0.40);
+    }
+}
+
+

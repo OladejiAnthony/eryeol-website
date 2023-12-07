@@ -2,9 +2,9 @@ import React from 'react'
 
 function Contact() {
   return (
-    <section className='contact'>
+    <div className='contact'>
       Contact
-    </section>
+    </div>
   )
 }
 

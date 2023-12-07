@@ -11,7 +11,8 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className='app'>
+      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -21,6 +22,8 @@ function App() {
         {/* <Test /> */}
       </Routes>
     </BrowserRouter>
+    </div>
+   
     
   );
 }

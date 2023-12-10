@@ -10,6 +10,122 @@
         padding: 30px 30px 30px 30px;
         border-radius: 48px;
         background: #FFF;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+
+        .top {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            width: 343px;
+            height: 138px;
+            position: relative;
+
+             button {
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid var(--Linear, #66DAFF);
+                background: #F8F7FA;
+                color: #4A4752;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 17.6px */
+             }
+
+             p {
+               // width: 373px;
+                color: #4A4752;
+                font-family: Geist;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 36px */
+                letter-spacing: -1.44px;
+             }
+        }
+
+        .middle {
+            height: 500px;
+            background: yellowgreen;
+            position: relative;
+            top: -40px;
+            
+            .carousel {
+                height: 100%;
+                background: gray;
+                padding: 100px 0px 0px 0px;
+                //display: flex;
+                //justify-content: center;
+                //align-items: center;
+
+                
+            }
+        }
+
+
+        .bottom {
+            width: 272px;
+            margin-top: 75px;
+            align-self: center;
+            
+            div {
+                display: inline-flex;
+                padding: 16px 16px 16px 32px;
+                justify-content: center;
+                align-items: center;
+                gap: 32px;
+                border-radius: 200px;
+                border: 1px solid #E4E4E7;
+                color: #262641;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%; /* 22px */
+                letter-spacing: -0.4px;
+
+                .svg {
+                    display: flex;
+                    padding: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 200px;
+                    background: linear-gradient(98deg, #FC63FF -82.69%, #8E5BEC 47.23%, #66DAFF 194.91%);
+                    
+                    svg {
+                        color: white;
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+                        
+                
+        }
+            
     }
+            
+        
+
+        
+
 }
+
+
+
+
+
 

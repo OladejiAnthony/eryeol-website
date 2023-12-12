@@ -1,0 +1,70 @@
+@import "../../App.scss";
+
+.testimonial-page {
+    height: 900px;
+
+    .wrapper {
+        width: 90%;
+        height: 775px;
+        margin: 100px auto;
+        padding: 30px 30px 30px 30px;
+        border-radius: 48px;
+        background: #4A4752;
+        display: flex;
+        gap: 77px;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        .top {
+            display: flex;
+            width: 280px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 19px;
+
+            button {
+                height: 42px;
+                width: 164px;
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid var(--Linear, #66DAFF);
+                background: #4A4752;
+                color: #FFF;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 17.6px */
+            }
+
+            h1 {
+                width: 280px;
+                align-self: stretch;
+                color: #FFF;
+                font-family: Geist;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 36px */
+                letter-spacing: -1.44px;
+            }
+        }
+
+        .middle {
+            height: 400px;
+            background: yellowgreen;
+            position: relative;
+            top: -40px;
+        }
+
+
+
+    }
+
+}

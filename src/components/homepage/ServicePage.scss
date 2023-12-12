@@ -1,4 +1,4 @@
-
+@import "../../App.scss";
 
 .service-page {
     height: 900px;
@@ -103,6 +103,7 @@
                     align-items: center;
                     gap: 10px;
                     border-radius: 200px;
+                    cursor: pointer;
                     background: linear-gradient(98deg, #FC63FF -82.69%, #8E5BEC 47.23%, #66DAFF 194.91%);
                     
                     svg {

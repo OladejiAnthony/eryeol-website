@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import "../sidebar/Sidebar.scss"
-import Links from './links/Links';
+import MenuLinks from './links/MenuLinks';
 import ToggleBtn from './menu/ToggleBtn';
 
 const Sidebar = () => {
@@ -16,11 +16,11 @@ const Sidebar = () => {
           },
           backgroundColor : "#ffffff",
           borderRadius: "40px",
-          position: "absolute",
-          top: "145px",
+          position: "fixed",
+          top: "125px",
           right: "85px",
-          width: "447px",
-          height: "544px",
+          width: "400px",
+          height: "474px",
           //clipPath: "circle(1200px at 50px 50px)",
       },
       closed : {
@@ -44,7 +44,7 @@ const Sidebar = () => {
         className='bg'
         variants={variants}
       >
-       <Links />
+       <MenuLinks />
       </motion.div>
       <ToggleBtn setOpen={setOpen}/>
     </motion.div>

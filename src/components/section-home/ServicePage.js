@@ -1,5 +1,5 @@
 import React from 'react'
-import "../homepage/ServicePage.scss"
+import "../section-home/ServicePage.scss"
 import Carousel from '../Carousel/Carousl'
 
 const LinkBtn = (

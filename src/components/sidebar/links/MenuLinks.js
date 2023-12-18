@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 
 export default function Links () {
     const variants = {
@@ -35,15 +36,20 @@ export default function Links () {
                 variants={variants}
             >
             {items.map((item) => (
-                <motion.a
-                    href={`#${item}`} 
-                    key={item}
+                <motion.div 
                     variants={itemVariants} 
                     whileHover={{scale: 1.1}}   
                     whileTap={{scale: 0.9}}
                 >
-                    {item}
-                </motion.a>
+                    <Link
+                        to={`${item}`} 
+                        key={item}   
+                        //relative="/about"  
+                    >
+                        {item}
+                    </Link>
+                </motion.div>
+                
             ))}
             </motion.div>
             <div className="textContainer">

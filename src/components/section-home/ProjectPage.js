@@ -1,5 +1,5 @@
 import React from 'react'
-import "../homepage/ProjectPage.scss"
+import "../section-home/ProjectPage.scss"
 
 function ProjectPage() {
   const PPBtn = (

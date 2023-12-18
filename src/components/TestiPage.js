@@ -1,5 +1,5 @@
 import React from 'react'
-import "../homepage/TestiPage.scss" 
+import "./TestiPage.scss" 
 
 const TestiPage = () => {
 

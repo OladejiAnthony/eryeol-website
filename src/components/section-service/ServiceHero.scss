@@ -1,0 +1,111 @@
+@import "../../App.scss";
+
+
+.service-hero {
+    padding-left: 8%;
+    
+
+    .container {
+        width: 50%;
+        background: transparent;
+        margin-top: 0px;
+        margin-bottom: 82px;
+        padding-bottom: 0px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+        left: 30%;
+
+        a {
+            width: 164px;
+            height: 42px;
+            display: inline-flex;
+            padding: 12px 14px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 200px;
+            border: 1px solid var(--Linear, #66DAFF);
+            border-color: #4A4752;
+            background: #F8F7FA;
+            color: #4A4752;
+            text-align: center;
+            font-family: Geist Mono Variable;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%; /* 17.6px */
+        }
+    
+        .text-box {
+            width: 678px;
+            height: 384px;
+            color: #0F0D18;
+            font-family: Geist;
+            font-size: 96px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 96px */
+            letter-spacing: -3.84px;
+    
+            span {
+                color: #FFF;
+                font-family: Geist;
+                font-size: 96px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: -3.84px;
+            }
+        }
+    
+        .btn {
+            display: flex;
+           // padding: 29px;
+            align-items: flex-start;
+           // gap: 10px;
+            text-align: center;
+            border-radius: 200px;
+            border: 1px solid #9797A6;
+            width: 371px;
+            height: 80px;
+           
+    
+            button {
+                width: 291px;
+                height: 80px;
+                color: #0F0D18;
+                display: flex;
+                padding: 25px 29px;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid #9797A6;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%; /* 22px */
+                letter-spacing: -0.4px;
+               // margin-top: 29px;
+                background: transparent;
+                cursor: pointer;
+               // border-width: 0px;
+               // border-color: unset;
+            }
+    
+            img {
+                width: 80px;
+                height: 80px;
+                stroke-width: 1px;
+                stroke: #9797A6;
+            }
+        }
+    }
+
+    
+}
+

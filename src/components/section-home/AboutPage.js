@@ -1,5 +1,5 @@
 import React from 'react'
-import "../homepage/AboutPage.scss"
+import "../section-home/AboutPage.scss"
 
 const AboutPage = () => {
 

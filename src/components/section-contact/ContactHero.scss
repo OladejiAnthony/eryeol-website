@@ -1,0 +1,99 @@
+.contact-wrapper {
+    padding-left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    //background: red;
+
+   .c-top {
+        height: 248px;
+        width: 678px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 91px;
+
+        button {
+            width: 164px;
+            height: 42px;
+            display: inline-flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 200px;
+            border: 1px solid var(--Linear, #66DAFF);
+            background: #F8F7FA;
+            color: #4A4752;
+            text-align: center;
+            font-family: Geist Mono Variable;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%; /* 17.6px */
+        }
+
+        h2 {
+            width: 678px;
+            height: 174px;
+            color: #0F0D18;
+            font-family: Geist;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 57.6px */
+            letter-spacing: -1.92px;
+        }
+   }
+
+   .c-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 827px;
+        height: 361px;
+        margin-left: 150px;
+
+        h4 {
+            color: #0F0D18;
+            font-family: Geist;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 28.8px */
+            letter-spacing: -0.48px;
+        }
+        .btn {
+            display: flex;
+            width: 827px;
+            align-items: center;
+            align-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            //background: red;
+
+            h3 {
+                display: flex;
+                padding: 24px 32px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid #9797A6;
+                color: #0F0D18;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%; /* 22px */
+                letter-spacing: -0.4px;
+                //cursor: pointer;
+            }
+        }
+   }
+
+   
+
+
+}

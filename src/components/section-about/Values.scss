@@ -1,0 +1,95 @@
+
+
+.values {
+    height: 570px;
+    width: 100%;
+    background: white;
+    
+
+    .wrapper {
+        width: 100%;
+        padding-left: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+
+        div {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+
+            button {
+                width: 144px;
+                height: 42px;
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid var(--Linear, #66DAFF);
+                color: #4A4752;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 17.6px */
+                background: #F8F7FA;
+            }
+            h3 {
+                width: 373px;
+                height: 108px;
+                color: #4A4752;
+                font-family: Geist;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 36px */
+                letter-spacing: -1.44px;
+            }
+        }
+        .list {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            align-items: flex-start;
+            gap: 16px;
+
+            .item {
+                width: 299px;
+                height: 222px;
+                display: flex;
+                padding: 24px 24px 45px 24px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 43px;
+                flex: 1 0 0;
+                border-radius: 16px;
+                background: #F9F8FC;
+
+                h5 {
+                    align-self: stretch;
+                    color: #26242F;
+                    font-family: Geist;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 132%; /* 26.4px */
+                    letter-spacing: -0.4px;
+                }
+                p {
+                    color: #262641;
+                    font-family: Geist Mono Variable;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 21px */
+                    align-self: stretch;
+                }
+            }
+        }
+    }
+}
+

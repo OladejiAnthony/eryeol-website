@@ -8,14 +8,13 @@ import Service from './pages/Service';
 import Contact from './pages/Contact';
 //import Test from './Test';
 
-
 function App() {
   return (
     <div className='app'>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/About-Us' element={<About />} />
+        <Route path='/About Us' element={<About />} />
         <Route path='/Project' element={<Project />} />
         <Route path='/Our Services' element={<Service />} />
         <Route path='/Contact Us' element={<Contact />} />

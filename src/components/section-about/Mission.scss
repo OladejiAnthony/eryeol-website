@@ -1,0 +1,104 @@
+.mission {
+    width: 100%;
+    background: white;
+    padding-left: 8%;
+    
+
+    .wrapper {
+        width: 90%;
+        height: 595px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 48px;
+        background: #0F0D18;
+        margin-top: 100px;
+    }
+
+    .left {
+        width: 50%;
+        flex-shrink: 0;
+       // background: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        
+        img {
+            width: 390px;
+            height: 468px;
+            margin-top: -25px;
+        }
+    }
+
+    .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 39px;
+        
+        .top {
+            width: 500px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 19px;
+            margin-top: 110px;
+            //background: green;
+         
+            button {
+                display: flex;
+                padding: 12px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid var(--Linear, #66DAFF);
+                background: #000;
+                color: #FFF;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 17.6px */
+            }
+            h3 {
+                align-self: stretch;
+                color: #FFF;
+                font-family: Geist;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 43.2px */
+                letter-spacing: -1.44px;
+            }
+            div {
+                width: 133px;
+                height: 133px;
+                margin-right: 112px;
+                flex-shrink: 0;
+                align-self: flex-end;
+                position: absolute;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        p {
+            width: 500px;
+            align-self: stretch;
+            color: #BCB8C6;
+            font-family: Geist Mono Variable;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 30px */
+        }
+    }
+
+}
+

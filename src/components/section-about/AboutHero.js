@@ -7,6 +7,7 @@ import Choose from './Choose'
 import Awards from './Awards'
 import WFooterHead from "../footer/WFooterHead"
 import WhiteFooter from '../footer/WhiteFooter'
+import Testimonials from './Testimonials'
 
 
 const AboutHero = () => {
@@ -20,7 +21,7 @@ const AboutHero = () => {
       <Values />
       <Team />
       <Choose />
-      {/* <Testimonialas /> */}
+      <Testimonials />
       <Awards />
       <WFooterHead />
       <WhiteFooter />

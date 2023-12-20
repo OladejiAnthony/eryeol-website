@@ -1,0 +1,57 @@
+@import "../../App.scss";
+
+.black-navbar {
+    height: 180px;
+    margin: 0px 96px;
+
+    .b-container {
+        height: 100%;
+        padding-top: 59px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 97px;
+        //background: green;
+
+        .nav {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 148.125px;
+                height: 40px;
+            }
+
+            button {
+                width: 144px;
+                height: 50px;
+                position: relative;
+                right: 70px;
+                border-radius: 200px;
+                border: 1px solid #7E5DEC;
+                background: #7E5DEC;
+                cursor: pointer;
+                display: flex;
+                padding: 16px 24px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #FFFFFF;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%; /* 17.6px */
+            }
+        }
+
+       
+    }
+}
+
+
+

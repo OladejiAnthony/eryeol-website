@@ -1,9 +1,9 @@
-@import "../App.scss";
+@import "../../App.scss";
 
-.testimonial-page {
-    height: 900px;
+.testimonial-home-page {
+    height: 880px;
 
-    .wrapper {
+    .test-wrapper {
         width: 90%;
         height: 775px;
         margin: 100px auto;
@@ -57,8 +57,8 @@
         }
 
         .middle {
-            height: 400px;
-            background: yellowgreen;
+            height: 550px;
+            //background: yellowgreen;
             position: relative;
             top: -40px;
         }

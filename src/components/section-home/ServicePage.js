@@ -1,6 +1,6 @@
 import React from 'react'
 import "../section-home/ServicePage.scss"
-import Carousel from '../Carousel/Carousl'
+import CarouselTest from './service-carousel/CarouselTest'
 
 const LinkBtn = (
   <div>
@@ -16,14 +16,14 @@ const LinkBtn = (
 
 function ServicePage() {
   return (
-    <div className='service-page'>
+    <div className='service-home-page'>
       <div className='wrapper'>
         <div className='top'>
           <button>Our Services</button>
           <p>We give excellent solutions.</p>
         </div>
         <div className='middle'>
-          <Carousel />
+          <CarouselTest />
         </div>
         <div className='bottom'>
           {LinkBtn}

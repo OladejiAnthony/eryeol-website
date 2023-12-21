@@ -9,7 +9,7 @@ const ProjectItem = ({ name, category, src }) => (
   
   <div className="item-container">
     <img src={src} alt="img" />
-    <div className="category">   
+    {/* <div className="category">   
       {category}
     </div>
     <div>
@@ -17,7 +17,7 @@ const ProjectItem = ({ name, category, src }) => (
         {name}
       </div>
       <img src={arrow} alt="" />
-    </div>
+    </div> */}
     
   </div>
 );

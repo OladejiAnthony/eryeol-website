@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Testimonials.scss"
+import TestiCarousel from '../section-home/testi-carousel/TestiCarousel'
 
 const Testimonials = () => {
   return (
@@ -10,7 +11,7 @@ const Testimonials = () => {
           <h1>They trust us, you should too</h1>
         </div>
         <div className='middle'>
-          middle
+        <TestiCarousel />
         </div>
       </div>
     </div>

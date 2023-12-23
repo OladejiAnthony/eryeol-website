@@ -8,7 +8,9 @@ import icon from "../../../image/servicesvg.svg"
 const Buttons = ({label, fontIcon, ariaButton, onEvent}) => {
   return (
     <div className="button-section">
-      <button onClick={onEvent} className={label} aria-pressed={ariaButton} type="button">{fontIcon}{label}{fontIcon}</button>
+      <button onClick={onEvent} className={label} aria-pressed={ariaButton} type="button">
+        {fontIcon}{label}
+      </button>
     </div>
   );
 }

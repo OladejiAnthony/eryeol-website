@@ -1,0 +1,217 @@
+@import "../../../../App.scss";
+
+.project-desc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 122px;
+    
+
+    .top {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+        //background: green;
+        padding-top: 100px;
+        padding-left: 7%;
+
+        img {
+            height: 454px;
+            width: 92%;
+            flex-shrink: 0;
+            border-radius: 24px;
+        }
+
+        .textContainer {
+            padding-top: 50px;
+            width: 500px;
+            height: 170px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap:  25px;
+
+            h2 {
+                width: 100%;
+                height: 64px;
+                color: #FFF;
+                font-family: Geist;
+                font-size: 64px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 64px */
+                letter-spacing: -2.56px;
+            }
+
+            .project-detail {
+                width: 100%;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                div {
+                    height: 100%;
+                    display: inline-flex;
+                    justify-content: flex-start;
+                    gap: 29px;
+
+                    p {
+                        color: #BCB8C6;
+                        font-family: Geist;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%; /* 24px */
+                        letter-spacing: -0.96px;
+                    }
+                    h5 {
+                        color: #FFF;
+                        font-family: Geist;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 100%; /* 24px */
+                        letter-spacing: -0.96px;
+                    }
+                }
+            }
+        }
+    }
+
+    .center {
+        width: 850px;
+        height: 346px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding-left: 7%;
+        
+
+        button {
+            width: 212px;
+            height: 42px;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 200px;
+            border: 1px solid var(--Linear, #66DAFF);
+            background: #000;
+            color: #FFF;
+            text-align: center;
+            font-family: Geist Mono Variable;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%; /* 17.6px */
+        }
+        p {
+            width: 100%;
+            color: #FFF;
+            font-family: Geist;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 33.6px */
+            letter-spacing: -0.24px;
+        }
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        //background: green;
+        padding-left: 7%;
+        width: 90%;
+        padding-top: 100px;
+
+        img:nth-child(1)  {
+            width: 800px;
+            height: 533px;
+            flex-shrink: 0;
+            border-radius: 32px;
+            align-self: flex-start;
+        }
+
+        img:nth-child(2) {
+            width: 800px;
+            height: 533px;
+            flex-shrink: 0;
+            border-radius: 32px;
+            align-self: flex-end;
+        }
+
+        div {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 16px;
+            width: 100%;
+    
+            .row-img {
+                width: 49%;
+                height: 433px;
+                border-radius: 32px;
+            }
+        }
+    }
+
+    .title {
+        width: 850px;
+        height: 346px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding-left: 7%;
+        
+
+        button {
+            width: 212px;
+            height: 42px;
+            display: flex;
+            padding: 12px 24px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 200px;
+            border: 1px solid var(--Linear, #66DAFF);
+            background: #000;
+            color: #FFF;
+            text-align: center;
+            font-family: Geist Mono Variable;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%; /* 17.6px */
+        }
+        p {
+            width: 100%;
+            color: #FFF;
+            font-family: Geist;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 33.6px */
+            letter-spacing: -0.24px;
+        }
+    }
+
+
+    section {
+        width: 100%;
+        padding-left: 7%;
+        padding-bottom: 50px;
+        img {
+            width: 90%;
+            height: 763px;
+            border-radius: 32px;
+        }
+    }
+
+    
+}

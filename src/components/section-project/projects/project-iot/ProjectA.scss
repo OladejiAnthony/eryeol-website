@@ -1,6 +1,6 @@
+@import "../../../../App.scss";
 
-
-.project-page {
+.project-a {
     //width: 90rem;
     min-height: 150vh;
     background: #0F0D18;
@@ -11,7 +11,7 @@
     flex-direction: column;
 
     .bg-img {
-        background-image: url("../image/back.png");
+        background-image: url("../../../../image/back.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 100%;

@@ -8,13 +8,14 @@ import Awards from './Awards'
 import WFooterHead from "../footer/WFooterHead"
 import WhiteFooter from '../footer/WhiteFooter'
 import Testimonials from './Testimonials'
+import { Link } from 'react-router-dom'
 
 
 const AboutHero = () => {
   return (
     <div className='about-hero'>
       <div className='about-top'> 
-        <button>About us</button>
+        <Link to="/about-us">About us</Link>
         <h2>Born of Passion, Driven by Innovation.</h2>
       </div>
       <Mission />

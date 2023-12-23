@@ -61,10 +61,16 @@
         }
 
         .middle {
-            height: 400px;
-            background: yellowgreen;
+            height: 550px;
+            //background: yellowgreen;
             position: relative;
-            //top: -40px;
+            top: -40px;
+
+            svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+                overflow: visible;
+                box-sizing: content-box;
+                color: wheat;
+            }
         }
 
 

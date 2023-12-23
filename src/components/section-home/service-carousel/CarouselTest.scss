@@ -72,36 +72,24 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-    
+
                     button {
                         width: 100%;
                         height: 100%;
                         border-width: 0px;
                         background: transparent;
-    
-                        .next > svg:first-of-type,
-                        .previous > svg:last-of-type,
-                        .send > svg:first-of-type {
-                            display: none;
+                        //color: wheat;
     
                             svg:not(:root).svg-inline--fa, 
                             svg:not(:host).svg-inline--fa {
                                 overflow: visible;
                                 box-sizing: content-box;
+                                //olor: wheat;
+                                width: 15.5px;
                             }
-    
-                            .svg-inline--fa {
-                                padding-left: 7px;
-                                padding-right: 7px;
-                                margin-bottom: -2px;
-    
-                                .next > svg:last-of-type {
-                                    margin-bottom: -1px;
-                                  }
-                              }
-    
-                        }
+              
                     }
+    
                 }
                 
             }

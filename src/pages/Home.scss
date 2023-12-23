@@ -11,8 +11,8 @@
     flex-direction: column;
 
     .bg-img {
-        background-image: url("../image/background-img.png");
-        background-size: cover;
+        background-image: url("../image/back.png");
+        background-size: contain;
         background-repeat: no-repeat;
     }
 

@@ -26,6 +26,9 @@
                 width: 125px;
                 height: 42px;
                 cursor: pointer;
+                border-radius: 200px;
+                border: 1px solid var(--Linear, #66DAFF);
+                background: #F8F7FA;
             }
             h3 {
                 color: #4A4752;
@@ -111,6 +114,34 @@
                     flex-direction: column;
                     position: relative;
 
+                    div {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 7px;
+                        margin-left: 40px;
+
+                        h3 {
+                            width: 129px;
+                            color: #FFF;
+                            font-family: Geist;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 132%; /* 26.4px */
+                            letter-spacing: -0.4px;
+                        }
+                        p{
+                            width: 129px;
+                            color: #BCB8C6;
+                            font-family: Geist Mono Variable;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 21px */
+                        }
+                    }
+
                     img {
                         position: absolute;
                         margin-top: 80px;
@@ -127,6 +158,34 @@
                     display: flex;
                     flex-direction: column;
                     position: relative;
+
+                    div {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 7px;
+                        margin-left: 40px;
+
+                        h3 {
+                            width: 129px;
+                            color: #FFF;
+                            font-family: Geist;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 132%; /* 26.4px */
+                            letter-spacing: -0.4px;
+                        }
+                        p{
+                            width: 129px;
+                            color: #BCB8C6;
+                            font-family: Geist Mono Variable;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 21px */
+                        }
+                    }
 
                     img {
                         position: absolute;

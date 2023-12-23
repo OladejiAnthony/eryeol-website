@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
-import bg from "../../image/world-img.png"
+import bg from "../../image/world.png"
 import "../footer/FootHead.scss"
 
 const FootHead = () => {

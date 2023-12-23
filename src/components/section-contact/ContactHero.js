@@ -1,13 +1,13 @@
 import React from 'react'
 import "./ContactHero.scss"
-import { Form } from 'react-router-dom'
+import { Form, Link } from 'react-router-dom'
 
 const ContactHero = () => {
 
   return (
     <div className='contact-wrapper'>
       <div className='c-top'> 
-        <button>Get in Touch</button>
+        <Link to="/contact">Get in Touch</Link>
         <h2>Ready to Elevate Your Digital Presence? Let's Connect and Conquer</h2>
       </div>
       <div className='c-bottom'> 

@@ -27,7 +27,7 @@ export default function Links () {
         }
     }
 
-    const items = ["About Us", "Our Services", "Projects", "Contact Us" ]
+    //const items = ["About Us", "Our Services", "Projects", "Contact Us" ]
 
     return (
         <div className="bg-link" variants={variants}>
@@ -35,7 +35,7 @@ export default function Links () {
                 className='links'
                 variants={variants}
             >
-            {items.map((item) => (
+            {/* {items.map((item) => (
                 <motion.div 
                     variants={itemVariants} 
                     whileHover={{scale: 1.1}}   
@@ -50,7 +50,51 @@ export default function Links () {
                     </Link>
                 </motion.div>
                 
-            ))}
+            ))} */}
+                <motion.div
+                    variants={itemVariants} 
+                    whileHover={{scale: 1.1}}   
+                    whileTap={{scale: 0.9}}
+                >
+                    <Link
+                        to="/about-us"  
+                    >
+                        About Us
+                    </Link>
+                </motion.div>
+                <motion.div
+                    variants={itemVariants} 
+                    whileHover={{scale: 1.1}}   
+                    whileTap={{scale: 0.9}}
+                >
+                    <Link
+                        to="/projects"  
+                    >
+                        Projects
+                    </Link>
+                </motion.div>
+                <motion.div
+                    variants={itemVariants} 
+                    whileHover={{scale: 1.1}}   
+                    whileTap={{scale: 0.9}}
+                >
+                    <Link
+                        to="/services"  
+                    >
+                        Our Services
+                    </Link>
+                </motion.div>
+                <motion.div
+                    variants={itemVariants} 
+                    whileHover={{scale: 1.1}}   
+                    whileTap={{scale: 0.9}}
+                >
+                    <Link
+                        to="/contact"  
+                    >
+                        Contact Us
+                    </Link>
+                </motion.div>
             </motion.div>
             <div className="textContainer">
                 <p>4517 Washington Ave. Manchester, Kentucky 39495</p>

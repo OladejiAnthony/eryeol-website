@@ -6,6 +6,7 @@ import About from './pages/About';
 import Project from './pages/Project';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
+import ProjectA from './components/section-project/projects/project-iot/ProjectA';
 //import Test from './Test';
 
 function App() {
@@ -14,11 +15,12 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path='/About Us' element={<About />} />
-        <Route path='/Projects' element={<Project />} />
-        <Route path='/Our Services' element={<Service />} />
-        <Route path='/Contact Us' element={<Contact />} />
+        <Route path='/about-us' element={<About />} />
+        <Route path='/projects' element={<Project />} />
+        <Route path='/services' element={<Service />} />
+        <Route path='/contact' element={<Contact />} />
         {/* <Test /> */}
+        <Route path='/project-iot' element={<ProjectA />} />
       </Routes>
     </BrowserRouter>
     </div>

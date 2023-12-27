@@ -1,18 +1,28 @@
-
+@import "../../App.scss";
 
 .values {
     height: 570px;
     width: 100%;
     background: white;
     padding-top: 50px;
+
+    @include phones {
+        height: 1270px;
+    }
     
 
     .wrapper {
         width: 100%;
-        padding-left: 15%;
+        padding-left: 10%;
         display: flex;
         flex-direction: column;
         gap: 59px;
+
+        @include phones {
+            padding-left: 10%;
+            height: 100%;
+            gap: 15px;
+        }
 
         div {
             display: inline-flex;
@@ -49,6 +59,11 @@
                 font-weight: 400;
                 line-height: 100%; /* 36px */
                 letter-spacing: -1.44px;
+
+                @include phones {
+                    font-size: 30px;
+                    width: 250px;
+                }
             }
         }
         .list {
@@ -57,6 +72,15 @@
             width: 90%;
             align-items: flex-start;
             gap: 16px;
+
+            @include phones {
+                height: 950px;
+                //background: red;
+                width: 95%;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
 
             .item {
                 width: 299px;
@@ -69,6 +93,10 @@
                 flex: 1 0 0;
                 border-radius: 16px;
                 background: #F9F8FC;
+
+                @include phones {
+                    width: 250px;
+                }
 
                 h5 {
                     align-self: stretch;
@@ -88,6 +116,13 @@
                     font-weight: 500;
                     line-height: 150%; /* 21px */
                     align-self: stretch;
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                    @include phones {
+                        font-size: 14px;
+                    }
                 }
             }
         }

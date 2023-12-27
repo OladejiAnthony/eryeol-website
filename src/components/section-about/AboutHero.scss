@@ -1,3 +1,4 @@
+@import "../../App.scss";
 
 .about-hero {
     //padding-left: 8%;
@@ -16,6 +17,10 @@
         align-items: center;
         gap: 32px;
         //margin-bottom: 250px;
+        @include mobile {
+            height: 400px;
+            padding-top: 50px;
+        }
 
         a {
             width: 164px;
@@ -48,6 +53,16 @@
             font-weight: 400;
             line-height: 100%; /* 96px */
             letter-spacing: -3.84px;
+
+            @include mobile {
+                font-size: 66px;
+                width: 100%;
+            }
+
+            @include phones {
+                font-size: 56px;
+                width: 100%;
+            }
         }
     }
 
@@ -57,10 +72,10 @@
         width: 100%;
     }
 
-    .white-footer {
-        height: 400px !important;
-        width: 100%;
-    }
+    // .white-footer {
+    //     height: 400px !important;
+    //     width: 100%;
+    // }
 
 }
 

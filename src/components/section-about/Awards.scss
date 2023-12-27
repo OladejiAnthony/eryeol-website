@@ -17,13 +17,24 @@
         margin-top: 100px;
         gap: 48px;
 
+        @include mobile {
+            padding: 0px 10%;
+        }
+
+        @include phones {
+            height: 790px;
+            gap: 38px;
+        }
+
         .top {
             display: inline-flex;
             flex-direction: column;
             align-items: flex-start;
-
             gap: 24px;
             width: 373px;
+            @include mobile {
+                width: 100%;
+            }
 
             button {
                 width: 260px;
@@ -63,6 +74,10 @@
             align-items: flex-start;
             //background: green;
             width: 406px;
+            @include mobile {
+                width: 100%;
+                padding: 0px 5%;
+            }
 
             .item {
                 display: flex;

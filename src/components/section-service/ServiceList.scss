@@ -1,4 +1,4 @@
-
+@import "../../App.scss";
 
 .service-list {
     padding: 10px 24px;
@@ -19,9 +19,21 @@
             border-radius: 48px;
             background: #F1F0F5;
 
+            @include mobile {
+                padding: 82px 40px 123px 40px;
+                gap: 50px;
+            }
+
+            @include phones {
+                gap: 20px;
+            }
+
             .top {
                 height: 300px;
                 width: 100%;
+                @include phones {
+                    height: 250px;
+                }
     
                 p {
                     height: 100%;
@@ -32,6 +44,12 @@
                     font-weight: 400;
                     line-height: 140%; /* 50.4px */
                     letter-spacing: -0.72px;
+                    @include mobile {
+                        font-size: 26px;
+                    }
+                    @include phones {
+                        font-size: 16px;
+                    }
                 }
             }
 
@@ -41,11 +59,15 @@
                 align-items: flex-start;
                 gap: 16px;
                 //background: yellow;
+                //align-self: flex-start;
     
                 .row {
                     display: flex;
                     align-items: flex-start;
                     gap: 16px;
+                    @include phones {
+                        flex-direction: column;
+                    }
                 }
     
                 .list {
@@ -59,10 +81,33 @@
                     background: #FFF;
                     width: 550px;
                     height: 467px;
+                    @include mobile {
+                        width: 300px;
+                        height: 300px;
+                        padding: 20px;
+                        gap: 0px;
+                        justify-content: flex-start;
+                    }
+                    @include phones {
+                        width: 100%;
+                    }
     
                     div {
                         width: 115px;
                         height: 105px;
+                        @include mobile {
+                            padding: 20px;
+                            width: 80px;
+                            height: 70px;
+                        }
+                        @include phones {
+    
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
     
                     }
                     .textContainer {
@@ -71,6 +116,14 @@
                         flex-direction: column;
                         align-items: flex-start;
                         gap: 24px;
+                        @include mobile {
+                            width: 100%;
+                            display: flex;
+                            gap: 14px;
+                            height: 200px;
+                            padding-bottom: 1px;
+                            //background: green;
+                        }
     
                         h3 {
                             align-self: stretch;
@@ -81,6 +134,9 @@
                             font-weight: 400;
                             line-height: 140%; /* 50.4px */
                             letter-spacing: -0.72px;
+                            @include mobile {
+                                font-size: 24px;
+                            }
                         }
                         p {
                             align-self: stretch;
@@ -90,6 +146,10 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: 150%; /* 24px */
+                            @include mobile {
+                                width: 100%;
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -106,6 +166,13 @@
             flex-direction: row;
             justify-content: flex-end;
 
+            @include mobile {
+                padding: 50px 50px 50px 50px;
+            }
+            @include mobile {
+                padding: 50px 5%;
+            }
+
             p {
                 width: 721px;
                 color: #0A0816;
@@ -115,6 +182,9 @@
                 font-weight: 400;
                 line-height: 140%; /* 50.4px */
                 letter-spacing: -0.72px;
+                @include mobile {
+                    font-size: 25px;
+                }
             }
         }
     }

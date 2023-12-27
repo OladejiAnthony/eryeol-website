@@ -74,6 +74,10 @@
                 border-width: 0px;
                 //background: red;
 
+                @include mobile {
+                    height: 350px;
+                }
+
                 li {
                     height: 510px;
                     width: 510px;
@@ -87,8 +91,21 @@
                    // background: #F9F8FC;
                     border-width: 0px;
 
+                    @include mobile {
+                        height: 350px;
+                        width: 310px;
+                        padding: 12px 23.101px 12px 23.899px;
+                        gap: 223px;
+
+                    }
+
                     img {
-                       
+                      
+
+                       @include mobile {
+                        height: 100%;
+                        width: 300px;
+                       }
                     }
                   
 

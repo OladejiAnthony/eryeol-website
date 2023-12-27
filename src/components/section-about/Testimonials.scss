@@ -18,6 +18,11 @@
         flex-direction: column;
         position: relative;
 
+        @include mobile {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
         .top {
             display: flex;
             width: 280px;

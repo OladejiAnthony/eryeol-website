@@ -1,4 +1,4 @@
-
+@import "../../App.scss";
 
 .about-home-page {
     height: 550px;
@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 50px;
 
     .wrapper {
         display: inline-flex;
@@ -16,6 +17,10 @@
         width: 50%;
         margin-top: 60px;
         height: 447px;
+
+        @include mobile {
+            width: 65%;
+        }
 
         .top {
             display: flex;
@@ -56,6 +61,13 @@
         }
 
         .center {
+            width: 100%;
+
+            @include tablet {
+                width: 100%;
+                height: 150px;
+            }
+
             p {
                 width: 484px;
                 color: #BCB8C6;
@@ -70,6 +82,11 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 150%; /* 30px */
+
+                @include tablet {
+                    height: 100%;
+                    width: 95%;
+                }
             }
         }
 

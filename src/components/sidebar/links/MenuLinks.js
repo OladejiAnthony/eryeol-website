@@ -62,6 +62,7 @@ export default function Links () {
                         About Us
                     </Link>
                 </motion.div>
+                {/*
                 <motion.div
                     variants={itemVariants} 
                     whileHover={{scale: 1.1}}   
@@ -73,6 +74,7 @@ export default function Links () {
                         Projects
                     </Link>
                 </motion.div>
+                */}
                 <motion.div
                     variants={itemVariants} 
                     whileHover={{scale: 1.1}}   

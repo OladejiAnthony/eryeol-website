@@ -18,9 +18,12 @@ const Navbar = () => {
         </div>
         <div className='bottom-nav'>
             <button>Software DEVELOPMENT</button>
-            <button>IoT</button>
             <button>IT Consultant</button>
+            <button>IoT</button>
             <button>Data Analytics and Business Intelligence</button>
+            <button>Digital Marketing</button>
+            <button>Hardware Development </button>
+            <button>UI/UX Design</button>
         </div>
       </div>
       <Sidebar />

@@ -18,7 +18,7 @@ function Home() {
       </div>
       <ServicePage />
       <AboutPage />
-      <ProjectPage />
+      {/* <ProjectPage /> */}
       <TestiPage />
       <FootHead />
       <Footer />

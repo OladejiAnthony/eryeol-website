@@ -20,7 +20,7 @@ function ServicePage() {
     <div className='service-home-page'>
       <div className='wrapper'>
         <div className='top'>
-          <Link>Our Services</Link>
+          <Link to="/services">Our Services</Link>
           <p>We give excellent solutions.</p>
         </div>
         <div className='middle'>

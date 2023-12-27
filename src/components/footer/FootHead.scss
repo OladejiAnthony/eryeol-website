@@ -1,8 +1,12 @@
-
+@import "../../App.scss";
 
 .foot-head {
     height: 900px;
    // background: gray;
+
+   @include mobile {
+    height: 800px;
+   }
     
 
     .wrapper {
@@ -35,6 +39,13 @@
             height: 154px;
             position: absolute;
             top: 200px;
+
+            @include mobile {
+                width: 100%;
+                height: 300px;
+                padding: 0px 5%;
+            }
+
             p {
                 color: #FFF;
                 text-align: center;
@@ -44,6 +55,10 @@
                 font-weight: 400;
                 line-height: 120%; /* 76.8px */
                 letter-spacing: -2.56px;
+
+                @include mobile {
+                    font-size: 54px;
+                }
             }
         }
 
@@ -56,8 +71,16 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+            width: 60%;
             border-radius: 48px;
             background: #1B1924;
+
+            @include mobile {
+                bottom: -150px;
+                height: 300px;
+            }
+
+           
 
             p {
                 color: #BCB8C6;
@@ -68,6 +91,10 @@
                 font-weight: 400;
                 line-height: 120%; /* 28.8px */
                 letter-spacing: -0.48px;
+
+                @include mobile {
+                    font-size: 18px;
+                }
             }
             h1 {
                 color: #FFF;
@@ -77,6 +104,10 @@
                 font-weight: 400;
                 line-height: 120%;
                 letter-spacing: -1.92px;
+
+                @include mobile {
+                    font-size: 56px;
+                }
             }
         }
     }

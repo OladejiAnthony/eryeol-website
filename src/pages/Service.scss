@@ -35,5 +35,16 @@
             
         }
     }
+
+    @include mobile {
+        .white-navbar {
+            margin: 0px 5%;
+
+            .container .nav .home-link {
+                width: 80.125px;
+                height: 30px;
+            }
+        }
+    }
 }
 

@@ -1,4 +1,4 @@
-
+@import "../App.scss";
 
 .about-page {
     min-height: 100vh;
@@ -21,6 +21,14 @@
         .white-navbar {
             height: 180px;
             margin: 0px 96px;
+
+            @include mobile {
+                margin: 0px 10px;
+            }
+
+            @include phones {
+
+            }
       
             .white-navbar .container .nav button {
                 right: 200px!important;

@@ -1,8 +1,13 @@
-
+@import "../../App.scss";
 
 .footer {
     height: 600px;
     padding: 240px 10px 0px 8%;
+
+    @include mobile {
+        height: 770px;
+        padding: 240px 5% 0px 5%;
+    }
     
     .wrapper {
         display: flex;
@@ -21,6 +26,10 @@
             height: 90%;
             padding-top: 67px;
 
+            @include mobile {
+                height: 100%;
+            }
+
             .bg-link {
                 height: 80%;
                 display: flex;
@@ -28,12 +37,22 @@
                 justify-content: flex-end;
                 gap: 121px;
 
+                @include mobile {
+                    height: 100%;
+                    gap: 40px;
+                    flex-direction: column-reverse;
+                }
+
                 .socials {
                     display: flex;
                     width: 195px;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 16px;
+
+                    @include mobile {
+                        width: 100%;
+                    }
 
                     a {
                         color: #BCB8C6;
@@ -53,6 +72,10 @@
                         align-self: stretch;
                         flex-wrap: wrap;
 
+                        @include mobile {
+                            gap: 20px;
+                        }
+
                         a {
                             display: flex;
                             padding: 12px;
@@ -71,6 +94,14 @@
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 16px;
+
+                    @include mobile {
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 5px;
+                    }
                 
                     p {
                         color: #BCB8C6;
@@ -85,9 +116,18 @@
                 .links {
                     width: 50%;
                     //background: yellow;
+                    gap: 20px;
                     display: flex;
                     flex-direction: column;
                     padding-right: 8%;
+
+                    @include mobile {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
                     
 
                     a {
@@ -101,6 +141,8 @@
                         letter-spacing: -0.64px;
                         display: flex;
                         justify-content: flex-end;
+
+                        @include mobile {font-size: 32px;}
                     }
                 }
 

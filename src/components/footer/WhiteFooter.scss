@@ -1,9 +1,17 @@
-
+@import "../../App.scss";
 
 .white-footer {
-    height: 600px;
+    height: 400px;
+    width: 100%;
     padding: 10px 10px 0px 8%;
     background: #FFF;
+    @include mobile {
+        height: 400px;
+    }
+    @include phones {
+        height: 650px;
+        padding: 40px 5% 0px 5%;
+    }
     
     .white-wrapper {
         display: flex;
@@ -21,6 +29,9 @@
         .foot {
             height: 90%;
             padding-top: 67px;
+            @include mobile {
+                height: 100%;
+            }
 
             .bg-link {
                 height: 80%;
@@ -28,6 +39,11 @@
                 flex-direction: row-reverse;
                 justify-content: flex-end;
                 gap: 121px;
+                @include phones {
+                    height: 100%;
+                    gap: 40px;
+                    flex-direction: column-reverse;
+                }
 
                 .socials {
                     display: flex;
@@ -35,6 +51,9 @@
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 16px;
+                    @include phones {
+                        width: 100%;
+                    }
 
                     a {
                         color: #BCB8C6;
@@ -53,6 +72,9 @@
                         gap: 16px;
                         align-self: stretch;
                         flex-wrap: wrap;
+                        @include phones {
+                            gap: 20px;
+                        }
 
                         a {
                             display: flex;
@@ -72,6 +94,16 @@
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 16px;
+                    @include phones {
+                        width: 100%;
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                    @include phones {
+                        align-items: flex-start;
+                    }
                 
                     p {
                         color: #BCB8C6;
@@ -86,9 +118,17 @@
                 .links {
                     width: 50%;
                     //background: yellow;
+                    gap: 20px;
                     display: flex;
                     flex-direction: column;
                     padding-right: 8%;
+                    @include phones {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
                     
 
                     a {
@@ -102,6 +142,7 @@
                         letter-spacing: -0.64px;
                         display: flex;
                         justify-content: flex-end;
+                        @include phones {font-size: 32px;}
                     }
                 }
 

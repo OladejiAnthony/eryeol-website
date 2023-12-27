@@ -91,10 +91,10 @@ const CarouselTest = () => {
         <div ref={galleryRef} role="region" aria-labelledby="gallery-label" tabIndex="0" aria-describedby="focus">
            
             <ul>
-              <Slide service="IT Consultant" src={icon} />
-              <Slide service="Data Analysis" src={icon} />
               <Slide service="Software Development" src={icon} />
-              <Slide service="Mobile Develoment" src={icon} />
+              <Slide service="IT Consultant" src={icon} />
+              <Slide service="Data Analytics and Business Intelligence" src={icon} />
+              <Slide service="Digital Marketing" src={icon} />
               <Slide service="UI/UX Design" src={icon} />
               <Slide service="IoT" src={icon} />
               <Slide service="Hardware Development" src={icon} />

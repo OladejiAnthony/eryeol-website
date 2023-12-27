@@ -1,4 +1,4 @@
-
+@import "../../App.scss";
 
 .team {
     width: 100%;
@@ -21,6 +21,13 @@
             gap: 24px;
             width: 373px;
             height: 182px;
+            @include mobile {
+                width: 100%;
+                padding: 0px 5%;
+            }
+            @include phones {
+                height: 200px;
+            }
 
             button {
                 width: 125px;
@@ -29,8 +36,20 @@
                 border-radius: 200px;
                 border: 1px solid var(--Linear, #66DAFF);
                 background: #F8F7FA;
+                color: #4A4752;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%; /* 17.6px */
+
+                @include phones {
+
+                }
             }
             h3 {
+                width: 100%;
                 color: #4A4752;
                 text-align: center;
                 font-family: Geist;
@@ -54,10 +73,28 @@
             width: 100%;
             margin-bottom: 100px;
 
+            @include mobile {
+                height: 100%;
+            }
+
             .row {
                 display: flex;
                 align-items: flex-start;
                 gap: 16px;
+
+                @include tablet {
+                    width: 95%;
+                }
+                @include mobile {
+                    height: 250px;
+                    //background: red;
+                }
+                @include phones {
+                    flex-direction: column;
+                    height: 800px;
+                    //background: yellow;
+                    align-items: center;
+                }
 
                 .item {
                     width: 405px;
@@ -68,6 +105,17 @@
                     display: flex;
                     flex-direction: column;
                     position: relative;
+
+                    @include tablet {
+                        width: 32%;
+                    }
+                    @include mobile {
+                        height: 100%;
+                        padding-top: 20px;
+                    }
+                    @include phones {
+                        width: 70%;
+                    }
 
                     div {
                         display: inline-flex;
@@ -101,6 +149,17 @@
                         position: absolute;
                         margin-top: 75px;
                         border-radius: 30px;
+
+                        @include tablet {
+                            width: 100%;
+                            margin-top: 100px;
+                        }
+                        @include mobile {
+                            margin-top: 80px;
+                        }
+                        @include phones {
+                            margin-top: 80px;
+                        }
                     }
   
                 }
@@ -113,6 +172,16 @@
                     display: flex;
                     flex-direction: column;
                     position: relative;
+                    @include tablet {
+                        width: 32%;
+                    }
+                    @include mobile {
+                        height: 100%;
+                        padding-top: 20px;
+                    }
+                    @include phones {
+                        width: 70%;
+                    }
 
                     div {
                         display: inline-flex;
@@ -146,6 +215,19 @@
                         position: absolute;
                         margin-top: 80px;
                         border-radius: 30px;
+
+                        @include tablet {
+                            position: absolute;
+                            margin-top: 100px;
+                            width: 100%;
+                            border-radius: 30px;
+                        }
+                        @include mobile {
+                            margin-top: 80px;
+                        }
+                        @include phones {
+                            margin-top: 80px;
+                        }
                     }
 
                 }
@@ -158,6 +240,16 @@
                     display: flex;
                     flex-direction: column;
                     position: relative;
+                    @include tablet {
+                        width: 32%;
+                    }
+                    @include mobile {
+                        height: 100%;
+                        padding-top: 20px;
+                    }
+                    @include phones {
+                        width: 70%;
+                    }
 
                     div {
                         display: inline-flex;
@@ -192,6 +284,16 @@
                         margin-top: 80px;
                         border-radius: 30px;
                         right: 0;
+                        @include tablet {
+                            margin-top: 30px;
+                            border-radius: 30px;
+                        }
+                        @include mobile {
+                            width: 100%;
+                        }
+                        @include phones {
+                            margin-top: 40px;
+                        }
                     }
 
                 }

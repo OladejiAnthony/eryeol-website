@@ -10,6 +10,14 @@
     display: flex;
     flex-direction: column;
 
+    @include tablet {
+        max-width: 100vw;
+    }
+
+    @include mobile {
+
+    }
+
     .bg-img {
         background-image: url("../image/back.png");
         background-size: contain;

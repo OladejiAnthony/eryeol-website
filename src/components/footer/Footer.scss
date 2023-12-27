@@ -8,6 +8,9 @@
         height: 770px;
         padding: 240px 5% 0px 5%;
     }
+    @include phones {
+        height: 820px;
+    }
     
     .wrapper {
         display: flex;

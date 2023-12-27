@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .contact-wrapper {
     padding-left: 8%;
     display: flex;
@@ -5,6 +7,10 @@
     justify-content: flex-end;
     align-items: center;
     //background: red;
+    @include tablet {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
    .c-top {
         height: 248px;
@@ -13,6 +19,15 @@
         flex-direction: column;
         gap: 30px;
         margin-bottom: 91px;
+        @include tablet {
+            padding-left: 0px;
+            width: 70%;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+        @include mobile {
+            width: 90%;
+        }
 
         a {
             width: 164px;
@@ -44,6 +59,12 @@
             font-weight: 400;
             line-height: 120%; /* 57.6px */
             letter-spacing: -1.92px;
+            @include tablet {
+                width: 100%;
+            }
+            @include mobile {
+                font-size: 40px;
+            }
         }
    }
 
@@ -54,6 +75,15 @@
         width: 827px;
         height: 361px;
         margin-left: 150px;
+        @include tablet {
+            padding-left: 0%;
+            margin-left: 0px;
+            width: 90%;
+            height: 500px;
+        }
+        @include mobile {
+            height: 450px;
+        }
 
         h4 {
             color: #0F0D18;
@@ -72,6 +102,9 @@
             gap: 12px;
             flex-wrap: wrap;
             //background: red;
+            @include tablet {
+                width: 100%;
+            }
 
             h3 {
                 display: flex;
@@ -89,6 +122,10 @@
                 line-height: 110%; /* 22px */
                 letter-spacing: -0.4px;
                 //cursor: pointer;
+                @include mobile {
+                    font-size: 16px;
+                    padding: 10px 10px;
+                }
             }
         }
    }

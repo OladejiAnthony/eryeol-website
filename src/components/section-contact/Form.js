@@ -29,17 +29,7 @@ const Form = () => {
             <input type='text' required placeholder='Your Name' name="user_name" />
             <input type='email' required placeholder='Your Email' name="user_email" />
             <textarea rows={8} placeholder='Brief us about the project'  name="message" />
-            <div className='budjet'>
-              <h2>Your Budjet(USD)</h2>
-              <div className='price'>
-                <div className='price-item'>- 5k</div>
-                <div className='price-item'>5k - 10k</div>
-                <div className='price-item'>10k - 20k</div>
-                <div className='price-item'>20k - 50k</div>
-                <div className='price-item'>50k - 100k</div>
-                <div className='price-item'> 100k -</div>
-              </div>
-            </div>
+            
             <button type="submit" value="Send">
               Send Message
             </button>

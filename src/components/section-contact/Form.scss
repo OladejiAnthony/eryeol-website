@@ -1,4 +1,4 @@
-
+@import "../../App.scss";
 
 .form {
     width: 827px;
@@ -8,6 +8,10 @@
     margin-left: 250px;
     margin-bottom: 100px;
     //background: green;
+    @include tablet {
+        width: 80%;
+        margin-left: 0px;
+    }
 
     form {
         width: 100%;

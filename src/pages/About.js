@@ -11,8 +11,7 @@ function About() {
       <div className='bg-img'>
         <WhiteNavbar />
         <AboutHero />
-      </div>
-      
+      </div>    
     </div>
   )
 }

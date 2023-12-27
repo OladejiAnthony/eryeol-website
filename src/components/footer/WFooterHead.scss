@@ -37,7 +37,7 @@
                 line-height: 120%; /* 76.8px */
                 letter-spacing: -2.56px;
 
-                @include phones {
+                @include mobile {
                     font-size: 58px;
                 }
             }

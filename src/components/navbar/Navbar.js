@@ -1,10 +1,25 @@
 import React from 'react'
 import "../navbar/Navbar.scss"
+import { motion } from 'framer-motion'
 import Sidebar from '../sidebar/Sidebar'
 import logo from "../../image/eryeol_logo.png"
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+  const slidingVariants = {
+    initial : {
+      x: 0,
+    },
+    animate: {
+        x: "-10%",
+        transition: {
+          repeat: Infinity,
+          repeatType: "mirror",
+          duration: 10,
+        }
+    }
+  }
+
   return (
     <div className='navbar'>
       <div className='wrapper'>
@@ -16,15 +31,20 @@ const Navbar = () => {
                 Contact Us
             </Link>
         </div>
-        <div className='bottom-nav'>
-            <button>Software DEVELOPMENT</button>
+        <motion.div 
+          className='bottom-nav'
+          variants={slidingVariants}
+          initial="initial"
+          animate="animate"
+        >
+            <button>Software Development</button>
             <button>IT Consultant</button>
             <button>IoT</button>
             <button>Data Analytics</button>
             <button>Digital Marketing</button>
             <button>Hardware Development </button>
             <button>UI/UX Design</button>
-        </div>
+        </motion.div>
       </div>
       <Sidebar />
     </div>

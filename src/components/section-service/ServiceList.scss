@@ -137,6 +137,10 @@
                             padding-bottom: 1px;
                             //background: green;
                         }
+                        @include phones {
+                           padding-left: 5px;
+                           padding-right: 5px;
+                        }
     
                         h3 {
                             align-self: stretch;

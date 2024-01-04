@@ -1,6 +1,7 @@
 import React from 'react'
 import  "../Hero/Hero.scss"
 import { Link } from 'react-router-dom'
+import {motion} from "framer-motion"
 
 const LinkBtn = (
   <div>
@@ -16,9 +17,19 @@ const LinkBtn = (
 const Hero = () => {
   return (
     <div className='hero'>
-      <div className='text-box'>
+      <motion.div 
+        animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+        transition={{
+          duration: 5,
+          delay: 0.3,
+          ease: [0.5, 0.71, 1, 0],
+        }}
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileHover={{ scale: 1.2 }}
+        className='text-box'
+      >
         Everything <span>Technology</span>
-      </div>
+      </motion.div>
       <div className=' btn'>
         <button>
             Learn more

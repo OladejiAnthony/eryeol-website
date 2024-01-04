@@ -105,6 +105,9 @@
                         align-items: center;
                         gap: 5px;
                     }
+                    @include phones {
+                        align-items: unset;
+                    }
                 
                     p {
                         color: #BCB8C6;

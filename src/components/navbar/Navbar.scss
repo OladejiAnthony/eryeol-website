@@ -99,6 +99,7 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
+            white-space: nowrap;
             justify-content: center;
             border-radius: 200px;
             border: 1px solid var(--Linear, #66DAFF);

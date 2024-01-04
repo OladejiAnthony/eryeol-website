@@ -46,6 +46,7 @@
             }
         }
     }
+    
     .white-footer {
         height: 400px!important;
 
@@ -87,7 +88,7 @@
             }
             @include phones {
                 padding-right: 8%;
-                width: 70%;
+                width: 100%;
             }
 
             a {

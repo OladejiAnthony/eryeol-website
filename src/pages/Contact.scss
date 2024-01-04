@@ -14,7 +14,7 @@
 
         .container .nav .home-link {
             @include mobile {
-                width: 70.125px;
+                width: 100.125px;
                 height: 30px;
             }
         }
@@ -35,6 +35,15 @@
         }
         @include phones {
             height: 670px!important;
+        }
+        .white-wrapper .foot .bg-link {
+            @include mobile {
+                gap: 9px;
+            }
+            @include phones {
+                gap: 51px;
+            }
+            
         }
 
         .white-wrapper .foot .bg-link .socials {
@@ -58,7 +67,7 @@
             }
             @include phones {
                 padding-right: 8%;
-                width: 70%;
+                width: 100%;
             }
 
             a {

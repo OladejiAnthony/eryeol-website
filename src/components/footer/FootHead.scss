@@ -59,6 +59,11 @@
                 @include mobile {
                     font-size: 54px;
                 }
+
+                span {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
@@ -113,3 +118,4 @@
     }
 
 }
+

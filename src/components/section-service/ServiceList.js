@@ -47,10 +47,11 @@ const ServiceList = () => {
                       <img src={con} alt='icon' />
                     </div>
                     <div className='textContainer'>
-                      <h3>Web Development and Design</h3>
-                      <p>Designing and building websites and web applications tailored to client needs.</p>
+                      <h3>Hardware Development</h3>
+                      <p>Designing and manufacturing hardware components and devices.</p>
                     </div>
                   </div>
+
                 </div>
                 <div className="row">
                   <div className='list'>
@@ -69,26 +70,6 @@ const ServiceList = () => {
                     <div className='textContainer'>
                       <h3>Digital Marketing</h3>
                       <p>Providing online marketing strategies, SEO, social media management, and digital advertising services.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className='list'>
-                    <div>
-                      <img src={con} alt='icon' />
-                    </div>
-                    <div className='textContainer'>
-                      <h3>Hardware Development</h3>
-                      <p>Designing and manufacturing hardware components and devices.</p>
-                    </div>
-                  </div>
-                  <div className='list'>
-                    <div>
-                      <img src={con} alt='icon' />
-                    </div>
-                    <div className='textContainer'>
-                      <h3>Mobile App Development</h3>
-                      <p>Creating mobile applications for iOS and Android platforms.</p>
                     </div>
                   </div>
                 </div>

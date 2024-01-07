@@ -3,7 +3,6 @@ import "./ContactHero.scss"
 import { Form, Link } from 'react-router-dom'
 
 const ContactHero = () => {
-
   return (
     <div className='contact-wrapper'>
       <div className='c-top'> 

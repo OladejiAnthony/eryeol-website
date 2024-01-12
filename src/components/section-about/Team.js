@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import "./Team.scss"
-import aam from "../../image/african-american-man.png"
-import am from "../../image/american-man.png"
-import aaw from "../../image/american-woman.png"
+import aam from "../../image/bsam.svg"
+import am from "../../image/eyinbo.svg"
+import aaw from "../../image/blacki.svg"
+import td from "../../image/td.svg"
 
 const Team = () => {
   return (
@@ -23,7 +24,7 @@ const Team = () => {
                     </div>
                     <img src={aam} alt='image' />
                 </div>
-                <div className='item-2'>
+                <div className='item-1'>
                     <div>
                         <h3>Name</h3>
                         <h3>Surname</h3>
@@ -31,7 +32,7 @@ const Team = () => {
                     </div>
                     <img src={am} alt='image' />
                 </div>
-                <div className='item-3'>
+                <div className='item-2'>
                     <div>
                         <h3>Name</h3>
                         <h3>Surname</h3>
@@ -40,16 +41,16 @@ const Team = () => {
                     <img src={aaw} alt='image' />
                 </div>
             </div>
-            <div className='row'>
-                <div className='item'>
+            <div className='row-2'>
+                <div className='item-3'>
                     <div>
                         <h3>Name</h3>
                         <h3>Surname</h3>
                         <p>CEO, Team lead</p>
                     </div>
-                    <img src={aam} alt='image' />
+                    <img src={td} alt='image' />
                 </div>
-                <div className='item-2'>
+          {/*      <div className='item-2'>
                     <div>
                         <h3>Name</h3>
                         <h3>Surname</h3>
@@ -57,7 +58,7 @@ const Team = () => {
                     </div>
                     <img src={am} alt='image' />
                 </div>
-                <div className='item-3'>
+                <div className='item-3'> 
                     <div>
                         <h3>Name</h3>
                         <h3>Surname</h3>
@@ -65,6 +66,7 @@ const Team = () => {
                     </div>
                     <img src={aaw} alt='image' />
                 </div>
+                */}
             </div>
         </div>
       </div>

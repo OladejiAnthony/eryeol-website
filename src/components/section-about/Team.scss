@@ -91,7 +91,7 @@
                 }
                 @include phones {
                     flex-direction: column;
-                    height: 800px;
+                    height: 900px;
                     //background: yellow;
                     align-items: center;
                 }
@@ -115,6 +115,7 @@
                     }
                     @include phones {
                         width: 70%;
+                        height: 400px;
                     }
 
                     div {
@@ -147,18 +148,98 @@
                     
                     img {
                         position: absolute;
-                        margin-top: 75px;
+                        margin-top: 15px;
+                        padding-left: 90px;
+                        border-radius: 30px;
+
+                        @include tablet {
+                            width: 100%;
+                            margin-top: 70px;
+                            padding-left: 58px;
+                        }
+                        @include mobile {
+                            height: 150px;
+                        }
+                        @include phones {
+                            height: 190px;
+                            width: 250px;
+                            right: 0;
+                            padding-left: 40px;
+                        }
+                    }
+  
+                }
+                .item-1 {
+                    width: 405px;
+                    height: 402px;
+                    border-radius: 32px;
+                    background: #0F0D18;
+                    padding-top: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+
+                    @include tablet {
+                        width: 32%;
+                    }
+                    @include mobile {
+                        height: 100%;
+                        padding-top: 20px;
+                    }
+                    @include phones {
+                        width: 70%;
+                        height: 400px;
+                    }
+
+                    div {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 7px;
+                        margin-left: 40px;
+
+                        h3 {
+                            width: 129px;
+                            color: #FFF;
+                            font-family: Geist;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 132%; /* 26.4px */
+                            letter-spacing: -0.4px;
+                        }
+                        p{
+                            width: 129px;
+                            color: #BCB8C6;
+                            font-family: Geist Mono Variable;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 21px */
+                        }
+                    }
+                    
+                    img {
+                        position: absolute;
+                        margin-top: 15px;
+                        /* padding-left: 90px; */
+                        right: 0;
                         border-radius: 30px;
 
                         @include tablet {
                             width: 100%;
                             margin-top: 100px;
+                            padding-left: 50px;
                         }
                         @include mobile {
-                            margin-top: 80px;
+                            margin-top: 70px;
                         }
                         @include phones {
-                            margin-top: 80px;
+                            height: 200px;
+                            width: 200px;
+                            right: 0;
+                            margin-top: 65px;
+                            padding-left: 0px;
                         }
                     }
   
@@ -181,6 +262,7 @@
                     }
                     @include phones {
                         width: 70%;
+                        height: 400px;
                     }
 
                     div {
@@ -215,18 +297,26 @@
                         position: absolute;
                         margin-top: 80px;
                         border-radius: 30px;
+                        height: 270px;
+                        width: 380px;
+                        right: 0;
 
                         @include tablet {
-                            position: absolute;
                             margin-top: 100px;
                             width: 100%;
-                            border-radius: 30px;
+                            height: 220px;     
                         }
                         @include mobile {
-                            margin-top: 80px;
+                                margin-top: 80px;
+                                height: 140px;
+                                width: 200px;
                         }
                         @include phones {
-                            margin-top: 80px;
+                            height: 160px;
+                            width: 100%;
+                            margin-top: 100px;
+                            right: 0;
+                            padding-left: 40px;
                         }
                     }
 
@@ -249,6 +339,7 @@
                     }
                     @include phones {
                         width: 70%;
+                        height: 400px;
                     }
 
                     div {
@@ -292,7 +383,102 @@
                             width: 100%;
                         }
                         @include phones {
-                            margin-top: 40px;
+                             height: 200px;
+                            width: 200px;
+                            right: 0;
+                            padding-left: 40px;
+                        }
+                    }
+
+                }
+            }
+            .row-2 {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+
+                @include tablet {
+                    width: 95%;
+                }
+                @include mobile {
+                    height: 250px;
+                    //background: red;
+                }
+                @include phones {
+                    flex-direction: column;
+                    height: 300px;
+                    //background: yellow;
+                    align-items: center;
+                }
+
+                .item-3 {
+                    width: 405px;
+                    height: 402px;
+                    border-radius: 32px;
+                    background: #0F0D18;
+                    padding-top: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    @include tablet {
+                        width: 32%;
+                    }
+                    @include mobile {
+                        height: 100%;
+                        padding-top: 20px;
+                    }
+                    @include phones {
+                        width: 70%;
+                        height: 298px;
+                    }
+
+                    div {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 7px;
+                        margin-left: 40px;
+
+                        h3 {
+                            width: 129px;
+                            color: #FFF;
+                            font-family: Geist;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 132%; /* 26.4px */
+                            letter-spacing: -0.4px;
+                        }
+                        p{
+                            width: 129px;
+                            color: #BCB8C6;
+                            font-family: Geist Mono Variable;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%; /* 21px */
+                        }
+                    }
+
+                    img {
+                        position: absolute;
+                        margin-top: 10px;
+                        width: 100%;
+                        border-radius: 30px;
+                        right: 0;
+                        @include tablet {
+                            margin-top: 70px;
+                            border-radius: 30px;
+                        }
+                        @include mobile {
+                            width: 100%;
+                            height: 150px;
+                        }
+                        @include phones {
+                            height: 200px;
+                            width: 230px;
+                            right: 0;
+                            padding-left: 10px;
                         }
                     }
 

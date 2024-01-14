@@ -13,12 +13,13 @@
 }
 [aria-labelledby="gallery-label"]::-webkit-scrollbar-track {
     background-color: transparent;
+    
 }
 [aria-labelledby="gallery-label"]::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 [aria-labelledby="gallery-label"] {
-    scrollbar-color: #eee transparent;
+    scrollbar-color: #eee #222;
     scrollbar-width: thin;
 }
   
@@ -68,6 +69,7 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
+                    cursor: pointer;
     
                     button {
                         width: 100%;
@@ -146,7 +148,8 @@
                         padding-top: 32px;
                     }
                     @include phones {
-                        width: 250px!important;
+                        width: 230px !important;
+                        padding: 10px;
                     }
                   
                     .top{
@@ -161,6 +164,10 @@
 
                         @include mobile {
                             align-items: center;
+                        }
+                        @include phones {
+                            align-items: center;
+                            gap: 5px;
                         }
                         
 
@@ -178,6 +185,10 @@
                             gap: 2px;
                             height: 56px;
                             width: 190px;
+                            @include phones {
+                                height: 80px;
+                                flex-wrap: nowrap;
+                            }
                                 h3 {
                                     color: #FFF;
                                     font-family: Geist;
@@ -195,6 +206,10 @@
                                     font-weight: 500;
                                     line-height: 150%; /* 24px */
                                     letter-spacing: -0.32px;
+
+                                    @include phones {
+                                        font-size: 12px;
+                                    }
                                 }
                         }
                     }
@@ -209,6 +224,9 @@
                             padding-left: 5px;
                             width: 100%;
                             height: 120px;
+                        }
+                        @include phones {
+                            height: 150px;
                         }
 
                         p {

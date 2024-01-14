@@ -26,7 +26,9 @@ const AboutPage = () => {
             </div>   
         </div>
         <div className='center'>
-            <p>We are a one stop technology and innovation agency. With years of great achievements and delivering quality products and services to our ambitious clients</p>
+            <p>
+            To revolutionize the way the world interacts with technology, by creating groundbreaking products and services that enhance lives, empower businesses, and contribute to a sustainable future, while fostering a culture of innovation, diversity, and social responsibility.
+            </p>
         </div>
         <div className='bottom'>
             {AbtBtn}

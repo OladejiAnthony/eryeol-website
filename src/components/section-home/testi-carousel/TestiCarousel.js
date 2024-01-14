@@ -3,7 +3,12 @@ import "./TestiCarousel.scss"
 import TestiSlide from "./TestiSlide";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import icon from "../../../image/african-man.png"
+//import icon from "../../../image/african-man.png"
+import aam from "../../../image/bsam.svg"
+import am from "../../../image/eyinbo.svg"
+import aaw from "../../../image/blacki.svg"
+import td from "../../../image/td.svg"
+import todd from "../../../image/todd.svg"
 
 const Buttons = ({label, fontIcon, ariaButton, onEvent}) => {
   return (
@@ -92,21 +97,33 @@ const TestiCarousel = () => {
            
             <ul>
               <TestiSlide 
-                name="Alfron Copeman"
-                position="CEO, OpenAI"
-                src={icon} 
+                name="Samson Fashola"
+                position="Director Research and Development."
+                src={aam} 
                 description="We are a one stop technology and innovation agency. With years of great achievements and delivering quality products and services to our ambitious clients"              
               />
               <TestiSlide 
-                name="Alfron Copeman"
-                position="CEO, OpenAI"
-                src={icon} 
+                name="Jessie Liu"
+                position="CEO, Yiwu Sale/ Chief Marketing Director"
+                src={am} 
                 description="We are a one stop technology and innovation agency. With years of great achievements and delivering quality products and services to our ambitious clients"              
               />
               <TestiSlide 
-                name="Alfron Copeman"
-                position="CEO, OpenAI"
-                src={icon} 
+                name="Akindele Bewaji"
+                position="Procurement Manager"
+                src={aaw} 
+                description="We are a one stop technology and innovation agency. With years of great achievements and delivering quality products and services to our ambitious clients"              
+              />
+              <TestiSlide 
+                name="Todd Ojeifo Akharaiyi"
+                position="Corporate Management/Customer Relatioship Manager"
+                src={todd} 
+                description="We are a one stop technology and innovation agency. With years of great achievements and delivering quality products and services to our ambitious clients"              
+              />
+              <TestiSlide 
+                name="Oladeji Anthony"
+                position="Software Engineer"
+                src={td} 
                 description="We are a one stop technology and innovation agency. With years of great achievements and delivering quality products and services to our ambitious clients"              
               />
              

@@ -9,6 +9,10 @@
     justify-content: flex-end;
     margin-bottom: 50px;
 
+    @include mobile {
+        justify-content: center;
+    }
+
     .wrapper {
         display: inline-flex;
         flex-direction: column;
@@ -86,6 +90,9 @@
                 @include tablet {
                     height: 100%;
                     width: 95%;
+                }
+                @include mobile {
+                    font-size: 14px;
                 }
             }
         }

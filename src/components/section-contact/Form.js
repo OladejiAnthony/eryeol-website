@@ -30,14 +30,25 @@ const Form = () => {
             <input type='email' required placeholder='Your Email' name="user_email" />
             <textarea rows={8} placeholder='Brief us about the project'  name="message" />
             
-            <button type="submit" value="Send">
-              Send Message
-            </button>
-            {error && "Error"}
-            {success && "Success"}
+            <div>
+              <button type="submit" value="Send">
+                Send Message
+              </button>
+              {error && "Error"}
+              {success && "Success"}
+              <div>
+                
+                <button className='btn-feed'>
+                Instant Feedback
+                </button>
+              </div>
+            </div>
+            
         </form>
     </div>
   )
 }
 
 export default Form
+
+

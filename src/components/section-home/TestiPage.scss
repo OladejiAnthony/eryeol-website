@@ -15,6 +15,9 @@
         justify-content: center;
         flex-direction: column;
         position: relative;
+        @include phones {
+            padding: 30px 20px 30px 20px;
+        }
 
         .top {
             display: flex;

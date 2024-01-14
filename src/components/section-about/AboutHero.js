@@ -4,10 +4,10 @@ import Mission from './Mission'
 import Values from './Values'
 import Team from './Team'
 import Choose from './Choose'
-import Awards from './Awards'
+//import Awards from './Awards'
 import WFooterHead from "../footer/WFooterHead"
 import WhiteFooter from '../footer/WhiteFooter'
-import Testimonials from './Testimonials'
+//import Testimonials from './Testimonials'
 import { Link } from 'react-router-dom'
 
 
@@ -22,8 +22,8 @@ const AboutHero = () => {
       <Values />
       <Team />
       <Choose />
-      <Testimonials />
-      <Awards />
+      {/* <Testimonials /> */}
+      {/* <Awards /> */}
       <WFooterHead />
       <WhiteFooter />
     </div>

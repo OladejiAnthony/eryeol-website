@@ -104,31 +104,54 @@
                 }
             }
         }
-
-        button {
-            cursor: pointer;
-            width: 180px;
-            height: 66px;
-            display: inline-flex;
-            padding: 24px 32px;
-            margin-top: 68px;
-            outline: none;
-            justify-content: center;
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            gap: 10px;
-            border-radius: 200px;
-            border: 1px solid #7E5DEC;
-            background: #7E5DEC;
-            color: #FFF;
-            text-align: center;
-            font-family: Geist Mono Variable;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 110%; /* 17.6px */
-            @include phones {
-                margin-top: 38px;
+
+            button {
+                cursor: pointer;
+                width: 180px;
+                height: 66px;
+                display: inline-flex;
+                padding: 24px 32px;
+                margin-top: 68px;
+                outline: none;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 200px;
+                border: 1px solid #7E5DEC;
+                background: #7E5DEC;
+                color: #FFF;
+                text-align: center;
+                font-family: Geist Mono Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 110%; /* 17.6px */
+                @include phones {
+                    margin-top: 38px;
+                }
+            }
+            div {
+                height: 100px;
+                display: flex;
+                padding: none;
+                flex-direction: column;
+                justify-content: space-evenly;
+                h2 {
+                    align-self: baseline;
+                }
+                .btn-feed {
+                    background: black;
+                    color: white;
+                    font-size: 16px;
+                }
             }
         }
+
+        
     }
 }

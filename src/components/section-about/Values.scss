@@ -1,10 +1,11 @@
 @import "../../App.scss";
 
 .values {
-    height: 570px;
+    //height: 570px;
     width: 100%;
     background: white;
     padding-top: 50px;
+    margin-bottom: 50px;
 
     @include phones {
         height: 1270px;
@@ -72,6 +73,7 @@
             width: 90%;
             align-items: flex-start;
             gap: 16px;
+            flex-wrap: wrap;
 
             @include phones {
                 height: 950px;

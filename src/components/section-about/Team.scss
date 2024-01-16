@@ -125,6 +125,7 @@
                         align-items: flex-start;
                         gap: 7px;
                         margin-left: 40px;
+                        background: #0F0D18;
 
                         h3 {
                             width: 129px;
@@ -198,6 +199,7 @@
                         align-items: flex-start;
                         gap: 7px;
                         margin-left: 40px;
+                        background: #0F0D18;
 
                         h3 {
                             width: 129px;
@@ -226,6 +228,7 @@
                         /* padding-left: 90px; */
                         right: 0;
                         border-radius: 30px;
+                        
 
                         @include tablet {
                             width: 100%;
@@ -272,6 +275,7 @@
                         align-items: flex-start;
                         gap: 7px;
                         margin-left: 40px;
+                        background: #0F0D18;
 
                         h3 {
                             width: 129px;
@@ -349,6 +353,7 @@
                         align-items: flex-start;
                         gap: 7px;
                         margin-left: 40px;
+                        background: #0F0D18;
 
                         h3 {
                             width: 129px;
@@ -431,6 +436,7 @@
                     @include phones {
                         width: 70%;
                         height: 298px;
+                       // position: unset;
                     }
 
                     div {
@@ -439,6 +445,10 @@
                         align-items: flex-start;
                         gap: 7px;
                         margin-left: 40px;
+                        background: #0F0D18;
+                        @include phones {
+                            border: transparent;
+                        }
 
                         h3 {
                             width: 129px;
@@ -477,8 +487,9 @@
                         }
                         @include phones {
                             height: 200px;
-                            width: 230px;
-                            right: 0;
+                            width: 150px;
+                            right: 10px;
+                            margin-top: 85px;
                             padding-left: 10px;
                         }
                     }
@@ -493,6 +504,8 @@
                     display: flex;
                     flex-direction: column;
                     position: relative;
+                    background: #0F0D18;
+
                     @include tablet {
                         width: 32%;
                     }
@@ -503,6 +516,7 @@
                     @include phones {
                         width: 70%;
                         height: 298px;
+                    
                     }
 
                     div {

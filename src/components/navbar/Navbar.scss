@@ -21,6 +21,7 @@
         flex-direction: column;
         align-items: center;
         gap: 97px;
+        position: relative;
         //background: green;
 
         @include tablet {
@@ -98,14 +99,12 @@
             width: 100%;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 20px;
             white-space: nowrap;
             justify-content: center;
             border-radius: 200px;
             border: 1px solid var(--Linear, #66DAFF);
             border: 0px;
-
-            
             @include tablet {
 
             }
@@ -138,6 +137,28 @@
                     font-size: 12px;
                 }
             }
+        }
+        .left-blur {
+            position: absolute;
+            background: #0A090F;
+            width: 200px;
+            height: 100px;
+            left: -100px;
+            top: 190px;
+            z-index: 999;
+            box-shadow: 1px 1px #0A090F;
+            border-radius: 0px 45px 45px 0px;
+        }
+        .right-blur {
+            position: absolute;
+            background: #0A090F;
+            width: 200px;
+            height: 100px;
+            right: -100px;
+            top: 195px;
+            z-index: 999;
+            box-shadow: 1px 1px #0A090F;
+            border-radius: 45px 0px 45px 45px;
         }
     }
 }

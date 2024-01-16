@@ -8,20 +8,23 @@ import Service from './pages/Service';
 import Contact from './pages/Contact';
 import ProjectA from './components/section-project/projects/project-iot/ProjectA';
 //import Test from './Test';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <div className='app'>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/about-us' element={<About />} />
-        <Route path='/projects' element={<Project />} />
-        <Route path='/services' element={<Service />} />
-        <Route path='/contact' element={<Contact />} />
-        {/* <Test /> */}
-        <Route path='/project-iot' element={<ProjectA />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/about-us' element={<About />} />
+          <Route path='/projects' element={<Project />} />
+          <Route path='/services' element={<Service />} />
+          <Route path='/contact' element={<Contact />} />
+          {/* <Test /> */}
+          <Route path='/project-iot' element={<ProjectA />} />
+        </Routes>
+      </ScrollToTop>
     </BrowserRouter>
     </div>
    

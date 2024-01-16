@@ -110,9 +110,9 @@
             justify-content: space-between;
             align-items: center;
 
-            button {
+            a {
                 cursor: pointer;
-                width: 180px;
+                width: 25%;
                 height: 66px;
                 display: inline-flex;
                 padding: 24px 32px;
@@ -133,23 +133,24 @@
                 line-height: 110%; /* 17.6px */
                 @include phones {
                     margin-top: 38px;
+                    width: 40%;
                 }
             }
-            div {
-                height: 100px;
-                display: flex;
-                padding: none;
-                flex-direction: column;
-                justify-content: space-evenly;
-                h2 {
-                    align-self: baseline;
-                }
+            
+      
+                
                 .btn-feed {
                     background: black;
                     color: white;
                     font-size: 16px;
+                    cursor: pointer;
+                    width: 25%;
+                    height: 66px;
+                    @include phones {
+                        width: 40%;
+                    }
                 }
-            }
+            
         }
 
         

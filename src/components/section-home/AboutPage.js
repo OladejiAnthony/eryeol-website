@@ -1,6 +1,9 @@
 import React from 'react'
 import "../section-home/AboutPage.scss"
 import { Link } from 'react-router-dom'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const AboutPage = () => {
 
@@ -14,26 +17,56 @@ const AboutPage = () => {
           </Link>
         </div>
     )
+    const boxVariant = {
+      visible: { opacity: 1, scale: 1, transition: { duration: 1 }, x: 400 },
+      hidden: { opacity: 0, scale: 0 }
+    };
+
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } else {
+        control.start("hidden");
+      }
+    }, [control, inView]);
 
   return (
     <div className='about-home-page'>
-      <div className='wrapper'>
-        <div className='top'>
+      <motion.div className='wrapper'>
+        <motion.div className='top'
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+        >
             <button>Our Mission</button>
             <div>
                 <h3>Service</h3>
                 <h3>Tech Solution</h3>
             </div>   
-        </div>
-        <div className='center'>
+        </motion.div>
+        <motion.div className='center'
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+        >
             <p>
             To revolutionize the way the world interacts with technology, by creating groundbreaking products and services that enhance lives, empower businesses, and contribute to a sustainable future, while fostering a culture of innovation, diversity, and social responsibility.
             </p>
-        </div>
-        <div className='bottom'>
+        </motion.div>
+        <motion.div className='bottom'
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+        >
             {AbtBtn}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   )
 }

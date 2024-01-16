@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef, useState } from 'react'
 import "./Form.scss"
 import emailjs from '@emailjs/browser';
@@ -8,14 +9,17 @@ const Form = () => {
   const form = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_mlo88fq', 'template_znpg0c3', form.current, 'ssDKjkCYBKRvCMHAJ')
+    emailjs.sendForm('service_hgl8l2q', 'template_mdj47mq', form.current, 'ssDKjkCYBKRvCMHAJ')
       .then(
         (result) => {
           setSuccess(true);
+          console.log('SUCCESS!', result.status, result.text);
       }, (error) => {
-          setError(true);
+          //setError(true);
+          console.log(error);
       });
   };
 
@@ -31,17 +35,16 @@ const Form = () => {
             <textarea rows={8} placeholder='Brief us about the project'  name="message" />
             
             <div>
-              <button type="submit" value="Send">
+              <a target="_blank" type="submit" value="Send">
                 Send Message
-              </button>
+              </a>
               {error && "Error"}
               {success && "Success"}
-              <div>
-                
-                <button className='btn-feed'>
+              
+                <a href="" target="_blank" className='btn-feed'>
                 Instant Feedback
-                </button>
-              </div>
+                </a>
+              
             </div>
             
         </form>

@@ -11,11 +11,11 @@ const Navbar = () => {
       x: 0,
     },
     animate: {
-        x: "-10%",
+        x: "-30%",
         transition: {
           repeat: Infinity,
           repeatType: "mirror",
-          duration: 10,
+          duration: 8,
         }
     }
   }
@@ -31,6 +31,7 @@ const Navbar = () => {
                 Contact Us
             </Link>
         </div>
+        
         <motion.div 
           className='bottom-nav'
           variants={slidingVariants}
@@ -45,6 +46,8 @@ const Navbar = () => {
             <button>Hardware Development </button>
             <button>UI/UX Design</button>
         </motion.div>
+        <div className='left-blur'></div>
+        <div className='right-blur'></div>
       </div>
       <Sidebar />
     </div>

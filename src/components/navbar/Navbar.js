@@ -6,19 +6,7 @@ import logo from "../../image/eryeol_logo.png"
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const slidingVariants = {
-    initial : {
-      x: 0,
-    },
-    animate: {
-        x: "-30%",
-        transition: {
-          repeat: Infinity,
-          repeatType: "mirror",
-          duration: 8,
-        }
-    }
-  }
+  
 
   return (
     <div className='navbar'>
@@ -32,12 +20,7 @@ const Navbar = () => {
             </Link>
         </div>
         
-        <motion.div 
-          className='bottom-nav'
-          variants={slidingVariants}
-          initial="initial"
-          animate="animate"
-        >
+        <div className='bottom-nav'>
             <button>Software Development</button>
             <button>IT Consultant</button>
             <button>IoT</button>
@@ -45,9 +28,8 @@ const Navbar = () => {
             <button>Digital Marketing</button>
             <button>Hardware Development </button>
             <button>UI/UX Design</button>
-        </motion.div>
-        <div className='left-blur'></div>
-        <div className='right-blur'></div>
+        </div>
+       
       </div>
       <Sidebar />
     </div>

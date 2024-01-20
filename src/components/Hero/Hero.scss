@@ -18,6 +18,9 @@
     @include mobile {
         padding-left: 0%;
     }
+    @include phones {
+        height: 700px;
+    }
 
     .text-box {
         width: 477px;
@@ -42,6 +45,7 @@
             text-align: center;
             align-self: flex-start;
             height: 132px;
+            margin-top: 0px;
         }
 
         span {
@@ -163,12 +167,13 @@
             }
         }
 
-        div { 
+        a { 
             display: flex;
             padding: 16px 16px 16px 32px;
             justify-content: center;
             align-items: center;
             gap: 32px;
+            cursor: pointer;
             border-radius: 200px;
             border: 1px solid rgba(255, 255, 255, 0.40);
             color: #FFF;

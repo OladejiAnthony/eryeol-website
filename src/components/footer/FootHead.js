@@ -3,6 +3,7 @@ import React from 'react'
 import bg from "../../image/world.png"
 import "../footer/FootHead.scss"
 import {motion, useAnimation} from "framer-motion"
+import { Link } from 'react-router-dom'
 
 const FootHead = () => {
   const text = "Let’s plunge you into your world of possibilities".split(" ");
@@ -12,42 +13,6 @@ const FootHead = () => {
     hidden: { scale: 0 },
   };
 
-  //Parent Animation
-  const boxVariant = {
-    hidden: {
-      x: "-100vw"
-    },
-    visible: {
-      x: 0,
-      transition: {
-        delay: 2,
-        when: "beforeChildren", //complete parent animation before the child begins its own animation.
-        staggerChildren: 0.2,
-
-        //Additions:
-        //delayChildren: 1
-        //staggerDirection: -1
-      }
-    }
-  }
-  //ChildList Animation
-  const listVariant = {
-    hidden: {
-      x: -10,
-      opacity: 0
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-
-      //Additions
-      transition: {
-         repeat: Infinity,
-         repeatType: "mirror",
-         duration: 2,
-      }
-    }
-  }
 
   return (
     <div className='foot-head'>
@@ -77,25 +42,14 @@ const FootHead = () => {
             ))}
             </p>
           </motion.div>
-          <motion.div 
-            className='bottom'
-            variants={boxVariant}
-            initial="hidden"
-            animate="visible"
-          >
-             <motion.p
-              className='boxItem'
-              variants={listVariant}
-             >
+          <div className='bottom'>
+             <p className='boxItem'>
               Ready for a Digital Revolution ?
-            </motion.p>
-            <motion.h1
-              className='boxItem'
-              variants={listVariant}
-            >
+            </p>
+            <Link to="/contact" className='boxItem'>
               Get in Touch
-            </motion.h1>
-          </motion.div>
+            </Link>
+          </div>
         </div>
     </div>
   )

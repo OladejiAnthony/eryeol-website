@@ -191,6 +191,9 @@
             top: 67px;
             padding: 16px 12px;
         }
+        @include phones {
+            top: 60px;
+        }
     }
     button:hover {
         background-color: #7E5DEC;

@@ -27,7 +27,7 @@ const Values = () => {
                 <p>Commit to sustainability in our operations and product development. Innovate to reduce environmental impact and promote a healthier planet.</p>
             </div>   
         </div>
-        <div className='list'>
+        <div className='list mobile-hide'>
             <div className='item'>
                 <h5>Inclusive Culture and Diversity</h5>
                 <p>Foster an inclusive workplace culture that embraces and celebrates diversity. Encourage different perspectives and ideas to drive creativity and innovation.</p>

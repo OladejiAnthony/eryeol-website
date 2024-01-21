@@ -24,6 +24,9 @@
                 padding: 10px;
                 width: 80px;
             }
+            @include phones {
+                width: 90px;
+            }
         }
     }
 
@@ -74,7 +77,7 @@
                 @include mobile {
                     color: black;
                     text-align: justify;
-                    font-family: Geist;
+                    font-family: "Inter", sans-serif;
                     font-size: 22px;
                 }
                 @include phones {

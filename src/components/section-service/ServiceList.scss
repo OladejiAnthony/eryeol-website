@@ -26,6 +26,7 @@
 
             @include phones {
                 gap: 20px;
+                padding: 25px;
             }
 
             .top {
@@ -38,7 +39,7 @@
                 p {
                     height: 100%;
                     color: #0A0816;
-                    font-family: Geist;
+                    font-family: "Inter", sans-serif;
                     font-size: 36px;
                     font-style: normal;
                     font-weight: 400;
@@ -145,7 +146,7 @@
                         h3 {
                             align-self: stretch;
                             color: #0F0D18;
-                            font-family: Geist;
+                            font-family: "Inter", sans-serif;
                             font-size: 36px;
                             font-style: normal;
                             font-weight: 400;
@@ -158,7 +159,7 @@
                         p {
                             align-self: stretch;
                             color: #262641;
-                            font-family: Geist Mono Variable;
+                            font-family: "Inter", sans-serif;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;
@@ -193,7 +194,7 @@
             p {
                 width: 721px;
                 color: #0A0816;
-                font-family: Geist;
+                font-family: "Inter", sans-serif;
                 font-size: 36px;
                 font-style: normal;
                 font-weight: 400;
@@ -201,6 +202,9 @@
                 letter-spacing: -0.72px;
                 @include mobile {
                     font-size: 25px;
+                }
+                @include phones {
+                    font-size: 23px;
                 }
             }
         }

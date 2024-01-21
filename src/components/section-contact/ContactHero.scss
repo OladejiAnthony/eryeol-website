@@ -11,6 +11,9 @@
         justify-content: flex-start;
         align-items: flex-start;
     }
+    @include mobile {
+        margin-bottom: 70px;
+    }
 
    .c-top {
         height: 248px;
@@ -42,7 +45,7 @@
             background: #F8F7FA;
             color: #4A4752;
             text-align: center;
-            font-family: Geist Mono Variable;
+            font-family: "Inter", sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -53,7 +56,7 @@
             width: 678px;
             height: 174px;
             color: #0F0D18;
-            font-family: Geist;
+            font-family: "Inter", sans-serif;
             font-size: 48px;
             font-style: normal;
             font-weight: 400;
@@ -64,6 +67,9 @@
             }
             @include mobile {
                 font-size: 40px;
+            }
+            @include phones {
+                font-size: 35px;
             }
         }
    }
@@ -87,12 +93,15 @@
 
         h4 {
             color: #0F0D18;
-            font-family: Geist;
+            font-family: "Inter", sans-serif;
             font-size: 24px;
             font-style: normal;
             font-weight: 400;
             line-height: 120%; /* 28.8px */
             letter-spacing: -0.48px;
+            @include phones {
+                font-size: 20px;
+            }
         }
         .btn {
             display: flex;
@@ -115,7 +124,7 @@
                 border: 1px solid #9797A6;
                 color: #0F0D18;
                 text-align: center;
-                font-family: Geist Mono Variable;
+                font-family: "Inter", sans-serif;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;

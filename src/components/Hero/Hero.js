@@ -30,7 +30,8 @@ const Hero = () => {
       >
         Everything <span>Technology</span>
       </motion.div>
-      <motion.div 
+      <motion.a href="/about-us" 
+        className='btn'
         animate={{ x: [50], opacity: 1, scale: 1 }}
         transition={{
           duration: 1.5,
@@ -38,7 +39,6 @@ const Hero = () => {
           //ease: [0.5, 0.71, 1, 0],
         }}
         initial={{ opacity: 0, scale: 0.5 }}
-        className=' btn'
       >
         <button>
             Learn more
@@ -47,7 +47,7 @@ const Hero = () => {
             <rect x="1" y="0.5" width="79" height="79" rx="39.5" stroke="white" stroke-opacity="0.4"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5 49.5858V27H41.5V49.5858L46.1569 44.9289C46.5474 44.5384 47.1806 44.5384 47.5711 44.9289C47.9616 45.3195 47.9616 45.9526 47.5711 46.3431L41.2071 52.7071C40.8166 53.0976 40.1834 53.0976 39.7929 52.7071L33.4289 46.3431C33.0384 45.9526 33.0384 45.3195 33.4289 44.9289C33.8195 44.5384 34.4526 44.5384 34.8432 44.9289L39.5 49.5858Z" fill="white"/>
         </svg>
-      </motion.div>
+      </motion.a>
       <div className='bottom-btn'>
         <p>We are a one stop technology and innovation agency. With years of great <span>achievements and delivering quality products and services to our ambitious clients</span></p>
         {LinkBtn}

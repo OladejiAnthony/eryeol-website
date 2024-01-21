@@ -19,7 +19,7 @@
             gap: 20px;
         }
         @include phones {
-            height: 400px;
+            height: 500px;
         }
 
         button {
@@ -27,7 +27,7 @@
             height: 18px;
             color: #4A4752;
             text-align: center;
-            font-family: Geist Mono Variable;
+            font-family: "Inter", sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -40,10 +40,14 @@
             border-radius: 200px;
             border: 1px solid var(--Linear, #66DAFF);
             background: #F8F7FA;
+
+            @include phones {
+                height: 47px;
+            }
         }
         p {
             color: #0A0816;
-            font-family: Geist;
+            font-family: "Inter", sans-serif;
             font-size: 36px;
             font-style: normal;
             font-weight: 400;

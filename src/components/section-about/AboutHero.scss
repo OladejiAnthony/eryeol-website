@@ -21,6 +21,9 @@
             height: 400px;
             padding-top: 50px;
         }
+        @include phones {
+            padding-top: 10px;
+        }
 
         a {
             width: 164px;
@@ -35,7 +38,7 @@
             background: #F8F7FA;
             color: #4A4752;
             text-align: center;
-            font-family: Geist Mono Variable;
+            font-family: "Inter", sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -47,7 +50,7 @@
             width: 636px;
             color: #0F0D18;
             text-align: center;
-            font-family: Geist;
+            font-family: "Inter", sans-serif;
             font-size: 96px;
             font-style: normal;
             font-weight: 400;

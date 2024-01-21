@@ -80,6 +80,9 @@
             width: 70%;
             gap: 10px;
         }
+        @include phones {
+            gap: 20px;
+        }
 
         
         
@@ -103,6 +106,9 @@
                 height: 200px;
                 gap: 10px;
             }
+            @include phones {
+                gap: 15px;
+            }
 
           
          
@@ -117,7 +123,7 @@
                 background: #000;
                 color: #FFF;
                 text-align: center;
-                font-family: Geist Mono Variable;
+                font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -127,7 +133,7 @@
                 width: 90%;
                 align-self: stretch;
                 color: #FFF;
-                font-family: Geist;
+                font-family: "Inter", sans-serif;
                 font-size: 36px;
                 font-style: normal;
                 font-weight: 400;
@@ -135,7 +141,9 @@
                 letter-spacing: -1.44px;
                 @include mobile {
                     font-size: 28px;
-                    
+                }
+                @include phones {
+                    font-size: 25px;
                 }
             }
             div {
@@ -155,7 +163,7 @@
             width: 500px;
             align-self: stretch;
             color: #BCB8C6;
-            font-family: Geist Mono Variable;
+            font-family: "Inter", sans-serif;
             font-size: 20px;
             font-style: normal;
             font-weight: 500;
@@ -163,6 +171,9 @@
 
             @include tablet {
                 width: 100%;
+            }
+            @include phones {
+                font-size: 12px;
             }
 
          

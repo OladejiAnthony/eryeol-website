@@ -27,7 +27,7 @@
             left: 10%;
         }
 
-        a {
+        button {
             width: 164px;
             height: 42px;
             display: inline-flex;
@@ -41,7 +41,7 @@
             background: #F8F7FA;
             color: #4A4752;
             text-align: center;
-            font-family: Geist Mono Variable;
+            font-family: "Inter", sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -52,7 +52,7 @@
             width: 678px;
             height: 384px;
             color: #0F0D18;
-            font-family: Geist;
+            font-family: "Inter", sans-serif;
             font-size: 96px;
             font-style: normal;
             font-weight: 400;
@@ -70,7 +70,7 @@
     
             span {
                 color: #FFF;
-                font-family: Geist;
+                font-family: "Inter", sans-serif;
                 font-size: 96px;
                 font-style: normal;
                 font-weight: 400;
@@ -79,7 +79,7 @@
             }
         }
     
-        .btn {
+        a.btn {
             display: flex;
            // padding: 29px;
             align-items: flex-start;
@@ -106,7 +106,7 @@
                 border-radius: 200px;
                 border: 1px solid #9797A6;
                 text-align: center;
-                font-family: Geist Mono Variable;
+                font-family: "Inter", sans-serif;
                 font-size: 25px;
                 font-style: normal;
                 font-weight: 400;

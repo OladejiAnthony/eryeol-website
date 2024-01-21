@@ -8,7 +8,8 @@
     margin-bottom: 50px;
 
     @include phones {
-        height: 1270px;
+        min-height: 100vh;
+        margin-bottom: 0px;
     }
     
 
@@ -43,7 +44,7 @@
                 border: 1px solid var(--Linear, #66DAFF);
                 color: #4A4752;
                 text-align: center;
-                font-family: Geist Mono Variable;
+                font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -54,7 +55,7 @@
                 width: 373px;
                 height: 108px;
                 color: #4A4752;
-                font-family: Geist;
+                font-family: "Inter", sans-serif;
                 font-size: 36px;
                 font-style: normal;
                 font-weight: 400;
@@ -98,12 +99,14 @@
 
                 @include phones {
                     width: 250px;
+                    padding: 15px;
+                    gap: 15px;
                 }
 
                 h5 {
                     align-self: stretch;
                     color: #26242F;
-                    font-family: Geist;
+                    font-family: "Inter", sans-serif;
                     font-size: 20px;
                     font-style: normal;
                     font-weight: 500;
@@ -112,7 +115,7 @@
                 }
                 p {
                     color: #262641;
-                    font-family: Geist Mono Variable;
+                    font-family: "Inter", sans-serif;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
@@ -127,6 +130,10 @@
                     }
                 }
             }
+        }
+
+        .mobile-hide {
+            display: none;
         }
     }
 }

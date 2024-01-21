@@ -37,7 +37,7 @@
                 background: #F8F7FA;
                 color: #4A4752;
                 text-align: center;
-                font-family: Geist Mono Variable;
+                font-family: "Inter", sans-serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -47,12 +47,16 @@
              p {
                // width: 373px;
                 color: #4A4752;
-                font-family: Geist;
+                font-family: "Inter", sans-serif;
                 font-size: 36px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100%; /* 36px */
                 letter-spacing: -1.44px;
+
+                @include phones {
+                    font-size: 30px;
+                }
              }
         }
 
@@ -81,7 +85,7 @@
                 border: 1px solid #E4E4E7;
                 color: #262641;
                 text-align: center;
-                font-family: Geist Mono Variable;
+                font-family: "Inter", sans-serif;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;

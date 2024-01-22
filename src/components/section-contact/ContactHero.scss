@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     //background: red;
     @include tablet {
         justify-content: flex-start;
@@ -80,7 +80,7 @@
         gap: 16px;
         width: 827px;
         height: 361px;
-        margin-left: 150px;
+        //margin-left: 150px;
         @include tablet {
             padding-left: 0%;
             margin-left: 0px;

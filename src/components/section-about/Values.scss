@@ -5,10 +5,13 @@
     width: 100%;
     background: white;
     padding-top: 50px;
-    margin-bottom: 50px;
-
+    //margin-bottom: 50px;
+    height: 800px;
+    @include tablet {
+        height: 900px;
+    }
     @include phones {
-        min-height: 100vh;
+        min-height: 1200px;
         margin-bottom: 0px;
     }
     
@@ -18,7 +21,7 @@
         padding-left: 10%;
         display: flex;
         flex-direction: column;
-        gap: 59px;
+        gap: 29px;
 
         @include phones {
             padding-left: 10%;
@@ -92,10 +95,15 @@
                 padding: 24px 24px 45px 24px;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 43px;
+                gap: 15px;
                 flex: 1 0 0;
                 border-radius: 16px;
                 background: #F9F8FC;
+
+                @include mobile {
+                    gap: 2px;
+                    padding: 10px;
+                }
 
                 @include phones {
                     width: 250px;
@@ -112,6 +120,9 @@
                     font-weight: 500;
                     line-height: 132%; /* 26.4px */
                     letter-spacing: -0.4px;
+                    @include tablet {
+                        font-size: 16px;
+                    }
                 }
                 p {
                     color: #262641;
@@ -122,8 +133,8 @@
                     line-height: 150%; /* 21px */
                     align-self: stretch;
 
-                    @include mobile {
-                        font-size: 12px;
+                    @include tablet {
+                        font-size: 10px;
                     }
                     @include phones {
                         font-size: 14px;
@@ -133,7 +144,9 @@
         }
 
         .mobile-hide {
-            display: none;
+            @include phones {
+                display: none;
+            }
         }
     }
 }

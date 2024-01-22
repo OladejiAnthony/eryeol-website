@@ -5,13 +5,10 @@
     background: #0F0D18;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 
-    @include mobile {
-        justify-content: center;
-    }
 
     .wrapper {
         display: inline-flex;

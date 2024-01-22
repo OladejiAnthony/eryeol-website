@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom'
 const FootHead = () => {
   const text = "Let’s plunge you into your world of possibilities".split(" ");
 
-  const variant = {
-    visible: { scale: 1, transition: {duration: 2}},
-    hidden: { scale: 0 },
-  };
+  // const variant = {
+  //   visible: { scale: 1, transition: {duration: 2}},
+  //   hidden: { scale: 0 },
+  // };
 
 
   return (
@@ -20,10 +20,10 @@ const FootHead = () => {
           <div className='foot-bg0img'>
             <img src={bg} alt='image'  />
           </div>
-          <motion.div 
-            variants={variant}
-            initial="hidden"
-            whileInView="visible"
+          <div 
+            // variants={variant}
+            // initial="hidden"
+            // whileInView="visible"
             className='top'
           >
             <p>
@@ -32,8 +32,8 @@ const FootHead = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
-                  duration: 0.25,
-                  delay: i / 10
+                  duration: 2,
+                  delay: i / 2
                 }}
                 key={i}
               >
@@ -41,7 +41,7 @@ const FootHead = () => {
               </motion.span>
             ))}
             </p>
-          </motion.div>
+          </div>
           <div className='bottom'>
              <p className='boxItem'>
               Ready for a Digital Revolution ?

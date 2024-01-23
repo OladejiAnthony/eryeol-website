@@ -59,6 +59,9 @@
                 @include mobile {
                     font-size: 54px;
                 }
+                @include phones {
+                    font-size: 44px;
+                }
 
                 span {
                     width: 100%;
@@ -85,8 +88,6 @@
                 height: 300px;
             }
 
-           
-
             p {
                 color: #BCB8C6;
                 text-align: center;
@@ -99,6 +100,7 @@
 
                 @include mobile {
                     font-size: 18px;
+                    width: 200px;
                 }
             }
             a {
@@ -113,6 +115,7 @@
 
                 @include mobile {
                     font-size: 56px;
+                    width: 200px;
                 }
             }
         }

@@ -12,6 +12,7 @@
 
     @include mobile {
         margin: 0px 10px;
+        height: 200px;
     }
     @include phones {
         height: 200px;
@@ -33,6 +34,9 @@
     
         @include mobile {
             gap: 47px;
+        }
+        @include phones {
+            height: 100%;
         }
 
         .top-nav {
@@ -109,17 +113,16 @@
             border: 1px solid var(--Linear, #66DAFF);
             border: 0px;
             @include tablet {
-                gap: 10px;
+                gap: 12px;
+                justify-content: flex-start;
             }
 
-            @include mobile {
-
-            }
+           
 
             button {
                 height: 42px;
                 display: flex;
-                padding: 12px 24px;
+                padding: 12px 12px;
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
@@ -134,41 +137,19 @@
                 font-weight: 500;
                 line-height: 110%; /* 17.6px */
                 @include tablet {
-                    font-size: 12px;
+                    font-size: 9px;
+                    padding: 12px;
                 }
 
                 @include mobile {
-                    height: 32px;
-                    padding: 4px 8px;
-                    font-size: 10px;
+                    display: none;
                 }
                 @include phones {
-                    visibility: hidden;
+                    display: none;
                 }
             }
         }
-        .left-blur {
-            position: absolute;
-            background: #0A090F;
-            width: 200px;
-            height: 100px;
-            left: -100px;
-            top: 190px;
-            z-index: 999;
-            box-shadow: 1px 1px #0A090F;
-            border-radius: 0px 45px 45px 0px;
-        }
-        .right-blur {
-            position: absolute;
-            background: #0A090F;
-            width: 200px;
-            height: 100px;
-            right: -100px;
-            top: 195px;
-            z-index: 999;
-            box-shadow: 1px 1px #0A090F;
-            border-radius: 45px 0px 45px 45px;
-        }
+  
     }
 }
 

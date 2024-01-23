@@ -1,7 +1,7 @@
 import React from 'react'
 import "../section-home/AboutPage.scss"
 import { Link } from 'react-router-dom'
-import { motion, useAnimation } from "framer-motion";
+import { motion} from "framer-motion";
 //import { useInView } from "react-intersection-observer";
 //import { useEffect } from "react";
 

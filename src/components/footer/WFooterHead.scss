@@ -20,6 +20,7 @@
 
             @include mobile {
                 width: 97%;
+                height: 300px;
             }
 
             @include phones {
@@ -55,6 +56,9 @@
             gap: 10px;
             border-radius: 48px;
             background: #1B1924;
+            @include mobile {
+                width: 650px;
+            }
             @include phones {
                 width: 100%;
             }
@@ -68,6 +72,9 @@
                 font-weight: 400;
                 line-height: 120%; /* 28.8px */
                 letter-spacing: -0.48px;
+                @include phones {
+                    width: 200px;
+                }
             }
             a {
                 color: #FFF;

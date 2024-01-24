@@ -99,6 +99,9 @@
                 flex: 1 0 0;
                 border-radius: 16px;
                 background: #F9F8FC;
+                @include tablet {
+                    padding: 10px;
+                }
 
                 @include mobile {
                     gap: 2px;
@@ -127,7 +130,7 @@
                 p {
                     color: #262641;
                     font-family: "Inter", sans-serif;
-                    font-size: 14px;
+                    font-size: 11px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 150%; /* 21px */
@@ -135,6 +138,9 @@
 
                     @include tablet {
                         font-size: 10px;
+                    }
+                    @include mobile {
+                        font-size: 8px;
                     }
                     @include phones {
                         font-size: 14px;

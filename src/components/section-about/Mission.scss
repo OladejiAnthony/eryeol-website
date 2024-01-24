@@ -160,7 +160,7 @@
             }
         }
         p {
-            width: 500px;
+            width: 90%;
             align-self: stretch;
             color: #BCB8C6;
             font-family: "Inter", sans-serif;
@@ -170,8 +170,14 @@
             line-height: 150%; /* 30px */
 
             @include tablet {
-                width: 100%;
+                width: 80%;
+                font-size: 18px;
             }
+            @include mobile {
+                width: 100%;
+                font-size: 14px;
+            }
+
             @include phones {
                 font-size: 12px;
             }

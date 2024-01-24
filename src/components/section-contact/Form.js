@@ -9,9 +9,16 @@ const Form = () => {
   const form = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setName("");
+    setEmail("");
+    setMessage("");
+    console.log(name, email, message);
     
     emailjs.sendForm('service_hgl8l2q', 'template_mdj47mq', form.current, 'ssDKjkCYBKRvCMHAJ')
       .then((result) => {
@@ -30,14 +37,14 @@ const Form = () => {
           onSubmit={sendEmail}
           //initial={{opacity: 0}}
         >
-            <input type='text' required placeholder='Your Name' name="user_name" />
-            <input type='email' required placeholder='Your Email' name="user_email" />
-            <textarea rows={8} placeholder='Brief us about the project'  name="message" />
+            <input type='text' required placeholder='Your Name' name="user_name" value={name} onChange={(e)=> setName(e.target.value)} />
+            <input type='email' required placeholder='Your Email' name="user_email" value={email} onChange={(e)=> setEmail(e.target.value)} />
+            <textarea rows={8} placeholder='Brief us about the project'  name="message" value={message} onChange={(e)=> setMessage(e.target.value)}  />
             
             <div>
-              <a target="_blank" type="submit" value="Send">
+              <button target="_blank" type="submit" value="Send">
                 Send Message
-              </a>
+              </button>
               {error && "Error"}
               {success && "Success"}
               

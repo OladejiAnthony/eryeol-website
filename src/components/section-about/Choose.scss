@@ -23,8 +23,8 @@
         }
 
         button {
-            width: 155px;
-            height: 18px;
+            width: 180px;
+            height: 50px;
             color: #4A4752;
             text-align: center;
             font-family: "Inter", sans-serif;
@@ -40,9 +40,14 @@
             border-radius: 200px;
             border: 1px solid var(--Linear, #66DAFF);
             background: #F8F7FA;
+            @include tablet {
+                width: 200px;
+                height: 48px;
+            }
 
             @include phones {
                 height: 47px;
+                width: 190px;
                 font-size: 14px;
             }
         }

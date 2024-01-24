@@ -79,8 +79,12 @@
                         gap: 16px;
                         align-self: stretch;
                         flex-wrap: wrap;
+                        @include mobile {
+                            display: flex;
+                        }
                         @include phones {
                             gap: 20px;
+                            display: flex;
                         }
 
                         a {
@@ -105,11 +109,8 @@
                         width: 100%;
                         display: inline-flex;
                         flex-direction: column;
-                        align-items: center;
-                        gap: 5px;
-                    }
-                    @include phones {
                         align-items: flex-start;
+                        gap: 5px;
                     }
                 
                     p {
@@ -119,6 +120,14 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%; /* 24px */  
+                    }
+                    p:nth-child(2) {
+                        @include mobile {
+                            display: none;
+                        }
+                        @include phones {
+                            display: flex;
+                        }
                     }
                 }
 
@@ -156,8 +165,12 @@
                         justify-content: flex-end;
                         @include mobile {
                             font-size: 22px;
+                            justify-content: flex-start;
                         }
-                        @include phones {font-size: 32px;}
+                        @include phones {
+                            font-size: 32px;
+                            justify-content: flex-end;
+                        }
                     }
                 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef, useState } from 'react'
 import "./Form.scss"
@@ -39,7 +40,7 @@ const Form = () => {
         >
             <input type='text' required placeholder='Your Name' name="user_name" value={name} onChange={(e)=> setName(e.target.value)} />
             <input type='email' required placeholder='Your Email' name="user_email" value={email} onChange={(e)=> setEmail(e.target.value)} />
-            <textarea rows={8} placeholder='Brief us about the project'  name="message" value={message} onChange={(e)=> setMessage(e.target.value)}  />
+            <textarea rows={8} placeholder='Brief us about your project'  name="message" value={message} onChange={(e)=> setMessage(e.target.value)}  />
             
             <div>
               <button target="_blank" type="submit" value="Send">
@@ -48,7 +49,8 @@ const Form = () => {
               {error && "Error"}
               {success && "Success"}
               
-                <a href="" target="_blank" className='btn-feed' onClick={()=> console.log("whatsapp contact")}>
+
+                <a href="https://wa.me/message/FBCTVS4KTRSLN1" target="_blank" className='btn-feed' onClick={()=> console.log("whatsapp contact")}>
                 Instant Feedback
                 </a>
               

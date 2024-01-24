@@ -20,7 +20,7 @@ const ContactHero = () => {
             <h3>IT Consulting</h3>
             <h3>Digital Marketing</h3>
             <h3>Mobile App Development</h3>
-            <h3>Hradware Development</h3>
+            <h3>Hardware Development</h3>
         </div>
       </div>
       

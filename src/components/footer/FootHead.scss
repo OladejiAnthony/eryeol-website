@@ -31,6 +31,9 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                @include phones {
+                    height: 70%;
+                }
             }
         }
 
@@ -112,6 +115,7 @@
                 line-height: 120%;
                 letter-spacing: -1.92px;
                 cursor: pointer;
+                text-align: center;
 
                 @include mobile {
                     font-size: 56px;

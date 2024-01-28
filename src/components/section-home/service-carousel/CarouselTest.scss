@@ -7,7 +7,7 @@
 
   
   [aria-labelledby="gallery-label"]:focus {
-  outline: 4px solid skyblue;
+    outline: 4px solid skyblue;
   }
   
   /**show scrollbar**/
@@ -23,7 +23,8 @@
 }
 [aria-labelledby="gallery-label"] {
     scrollbar-color: #eee #222;
-    scrollbar-width: thin;
+    scrollbar-width: none;
+   
 }
   
 

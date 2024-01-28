@@ -23,6 +23,9 @@
             height: 40px;
             flex-shrink: 0;
             //background: lightgray 50% / cover no-repeat;
+            @include mobile {
+                align-self: center;
+            }
         }
 
         .foot {
@@ -63,7 +66,7 @@
                         align-items: center;
                     }
                     @include phones {
-                        align-items: flex-start;
+                        align-items: center;
                     }
 
                     a {
@@ -89,8 +92,8 @@
                             align-self: center;
                         }
                         @include phones {
-                            align-items: flex-start;
-                            align-self: stretch;
+                            align-items: center;
+                            align-self: unset;
                         }
 
                         a {
@@ -118,9 +121,11 @@
                         flex-direction: column;
                         align-items: center;
                         gap: 5px;
+                        text-align: center;
                     }
                     @include phones {
                         align-items: unset;
+                        text-align: center;
                     }
                 
                     p {

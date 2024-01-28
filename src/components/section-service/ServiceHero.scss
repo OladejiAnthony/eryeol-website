@@ -92,7 +92,7 @@
            // gap: 10px;
             text-align: center;
             border-radius: 200px;
-            border: 1px solid #9797A6;
+           // border: 1px solid #9797A6;
             width: 371px;
             height: 80px;
             @include tablet {
@@ -139,6 +139,7 @@
                 height: 80px;
                 stroke-width: 1px;
                 stroke: #9797A6;
+                display: none;
                 @include phones {
                     height: 100%;
                 }

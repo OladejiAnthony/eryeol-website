@@ -24,6 +24,9 @@
             height: 40px;
             flex-shrink: 0;
             //background: lightgray 50% / cover no-repeat;
+            @include phones {
+                align-self: center;
+            }
         }
 
         .foot {
@@ -61,6 +64,9 @@
                     @include mobile {
                         width: 100%;
                     }
+                    @include phones {
+                        align-items: center;
+                    }
 
                     a {
                         color: #BCB8C6;
@@ -76,15 +82,18 @@
                         display: flex;
                         align-items: flex-start;
                         align-content: flex-start;
-                        gap: 16px;
+                        gap: 36px;
                         align-self: stretch;
                         flex-wrap: wrap;
                         @include mobile {
                             display: flex;
+                            gap: 18px;
                         }
                         @include phones {
                             gap: 20px;
                             display: flex;
+                            align-items: center;
+                            align-self: unset;
                         }
 
                         a {
@@ -94,7 +103,15 @@
                             gap: 10px;
                             border-radius: 200px;
                             border: 1px solid #4A4752;
-                            
+                            width: 46px; 
+                            @include mobile {
+                                width: 42px;
+                                height: 42px;
+                            }
+                            @include phones {
+                                width: 46px;
+                                height: 46px;
+                            }
                         }
                     }
                 }
@@ -109,7 +126,7 @@
                         width: 100%;
                         display: inline-flex;
                         flex-direction: column;
-                        align-items: flex-start;
+                        align-items: center;
                         gap: 5px;
                     }
                 
@@ -119,7 +136,10 @@
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 500;
-                        line-height: 150%; /* 24px */  
+                        line-height: 150%; /* 24px */
+                        @include phones {
+                            display: flex;
+                        }  
                     }
                     p:nth-child(2) {
                         @include mobile {
@@ -164,7 +184,7 @@
                         display: flex;
                         justify-content: flex-end;
                         @include mobile {
-                            font-size: 22px;
+                            font-size: 18px;
                             justify-content: flex-start;
                         }
                         @include phones {

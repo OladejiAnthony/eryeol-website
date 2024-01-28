@@ -22,7 +22,7 @@ const Values = () => {
                 <h5>User-Centric Design</h5>
                 <p>We Place the user at the center of everything we do. We design products and services that are intuitive, accessible, and tailored to meet the diverse needs of our global user base.</p>
             </div>
-            <div className='item'>
+            <div className='item mobile-align'>
                 <h5>Sustainable Practices</h5>
                 <p>We are Committed to sustainability in our operations and product development. We innovate to reduce environmental impact and promote a healthier planet.</p>
             </div>   

@@ -20,6 +20,7 @@
         }
         .container .nav .contact-link {
             @include mobile {
+                display: none;
                 right: 80px;
                 padding: 10px;
                 width: 100px;
@@ -34,7 +35,7 @@
         height: 400px!important;
 
         @include mobile {
-            height: 550px!important;
+            height: 400px!important;
         }
         @include phones {
             height: 670px!important;

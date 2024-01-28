@@ -10,6 +10,9 @@
     @include tablet {
         height: 900px;
     }
+    @include mobile {
+        height: 600px;
+    }
     @include phones {
         min-height: 1200px;
         margin-bottom: 0px;
@@ -34,6 +37,9 @@
             flex-direction: column;
             align-items: flex-start;
             gap: 24px;
+            @include phones {
+                align-items: center;
+            }
 
             button {
                 width: 144px;
@@ -85,7 +91,7 @@
                 width: 95%;
                 flex-direction: column;
                 justify-content: flex-start;
-                align-items: flex-start;
+                align-items: center;
             }
 
             .item {
@@ -147,10 +153,17 @@
                     }
                 }
             }
+
+            .mobile-align {
+                @include mobile {
+                    width: 250px!important;
+                    height: 100px;
+            }
+            }
         }
 
         .mobile-hide {
-            @include phones {
+            @include mobile {
                 display: none;
             }
         }

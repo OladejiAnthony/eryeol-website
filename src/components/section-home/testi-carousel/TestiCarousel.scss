@@ -10,13 +10,15 @@
   [aria-labelledby="gallery-label"]::-webkit-scrollbar {
     height: 0.75rem;
     visibility: hidden;
+    
 }
 [aria-labelledby="gallery-label"]::-webkit-scrollbar-track {
     background-color: transparent;
-    
+    outline: hidden;
 }
 [aria-labelledby="gallery-label"]::-webkit-scrollbar-thumb {
     background-color: transparent;
+    outline: hidden;
 }
 [aria-labelledby="gallery-label"] {
     scrollbar-color: #eee #222;

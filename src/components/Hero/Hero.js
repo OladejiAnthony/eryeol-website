@@ -49,8 +49,8 @@ const Hero = () => {
         </svg>
       </a>
       <div className='bottom-btn'>
-        <p>We are a one stop technology and innovation agency. With years of great
-          <span> achievements and delivering quality products and services to our ambitious clients</span>
+        <p>We believe in the power of technology to transform lives, industries, and the world at large.
+          <span> Inspired by the trailblazers of the tech world, we are dedicated to pushing the boundaries of what's possible, blending cutting-edge research, design, and engineering to create solutions that matter.</span>
         </p>
         {LinkBtn}
       </div>

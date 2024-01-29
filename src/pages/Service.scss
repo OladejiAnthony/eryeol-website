@@ -40,12 +40,23 @@
         .white-navbar {
             margin: 0px 5%;
 
+            .container .nav .contact-link {
+                height: 40px;
+            }
+
             .container .nav .home-link {
-                width: 80.125px;
-                height: 30px;
+                width: 148.125px;
+                height: 40px;
             }
         }
     }
+
+    @include phones {
+        .container .nav .contact-link {
+                display: none;
+        }
+    }
+    
     
     .white-footer {
         height: 400px!important;

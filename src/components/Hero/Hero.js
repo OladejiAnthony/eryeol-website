@@ -49,7 +49,9 @@ const Hero = () => {
         </svg>
       </a>
       <div className='bottom-btn'>
-        <p>We are a one stop technology and innovation agency. With years of great<span> achievements and delivering quality products and services to our ambitious clients</span></p>
+        <p>We are a one stop technology and innovation agency. With years of great
+          <span> achievements and delivering quality products and services to our ambitious clients</span>
+        </p>
         {LinkBtn}
       </div>
     </div>

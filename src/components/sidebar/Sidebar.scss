@@ -30,7 +30,7 @@
         .bg-link {
             width: 100%;
             //height: 100%;
-            gap: 28px;
+            gap: 18px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -40,6 +40,7 @@
                 height: 100%;
                 width: 100%;
                 padding: 22px 44px;
+                gap: 10px;
             }
 
             @include phones {
@@ -49,7 +50,7 @@
             .links {
                 //position: absolute;
                 width: 188px;
-                height: 188px;
+                height: 138px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -94,10 +95,11 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 16px;
-                width: 195px;
+                width: 280px;
                 @include mobile {
-                    height: 20%;
-                    gap: 6px;
+                    width: 220px;
+                    height: 100px;
+                    gap: 10px;
                 }
 
                 p {
@@ -108,6 +110,12 @@
                     font-weight: 500;
                     line-height: 150%; /* 21px */
                     letter-spacing: -0.28px;
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+                p:nth-child(2) {
+                    display: none; 
                 }
             }
 

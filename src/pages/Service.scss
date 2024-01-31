@@ -62,10 +62,10 @@
         height: 400px!important;
 
         @include mobile {
-            height: 400px!important;
+            height: 550px!important;
         }
         @include phones {
-            height: 670px!important;
+            height: 700px!important;
         }
 
         .white-wrapper .foot .bg-link {

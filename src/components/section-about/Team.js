@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react'
 import "./Team.scss"
-import aam from "../../image/bsam.svg"
-import am from "../../image/eyinbo.svg"
+import aam from "../../image/fash_1.svg"
+import am from "../../image/jessie_1.svg"
 import aaw from "../../image/blacki.svg"
 import td from "../../image/td.svg"
 import todd from "../../image/todd.svg"

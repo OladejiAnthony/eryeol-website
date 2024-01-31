@@ -99,7 +99,8 @@ export default function Links () {
                 </motion.div>
             </motion.div>
             <div className="textContainer">
-                <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                <p>China Address: Building 82, Kongcum, Second District, Jiangdong Street, Yiwu city, Jinhua city, Hejiang province, China</p>
+                <p>Nigeria Address: 8 Adelakun Adebiyi Street, Agbara Badagry, Lagos, Nigeria.</p>
                 <p>eryeolcompanylimited@gmail.com</p>
             </div>
             <div className="socials">

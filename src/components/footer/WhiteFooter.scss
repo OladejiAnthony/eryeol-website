@@ -6,10 +6,10 @@
     padding: 10px 10px 0px 8%;
     background: #FFF;
     @include mobile {
-        height: 400px;
+        height: 580px;
     }
     @include phones {
-        height: 650px;
+        height: 690px;
         padding: 40px 5% 0px 5%;
     }
     
@@ -24,7 +24,7 @@
             height: 40px;
             flex-shrink: 0;
             //background: lightgray 50% / cover no-repeat;
-            @include phones {
+            @include mobile {
                 align-self: center;
             }
         }
@@ -47,12 +47,10 @@
                     gap: 40px;
                 }
                 @include mobile {
-                    gap: 16px;
-                }
-                @include phones {
                     height: 100%;
                     gap: 40px;
                     flex-direction: column-reverse;
+                    align-items: center;
                 }
 
                 .socials {
@@ -63,6 +61,7 @@
                     gap: 16px;
                     @include mobile {
                         width: 100%;
+                        align-items: center;
                     }
                     @include phones {
                         align-items: center;
@@ -88,12 +87,11 @@
                         @include mobile {
                             display: flex;
                             gap: 18px;
+                            align-self: center;
                         }
                         @include phones {
                             gap: 20px;
-                            display: flex;
-                            align-items: center;
-                            align-self: unset;
+                           
                         }
 
                         a {
@@ -117,11 +115,15 @@
                 }
 
                 .textContainer {
-                    width: 195px;
+                    width: 500px;
                     display: inline-flex;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 16px;
+                    @include mobile {
+                        width: 100%;
+                        align-items: center;
+                    }
                     @include phones {
                         width: 100%;
                         display: inline-flex;
@@ -137,18 +139,11 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: 150%; /* 24px */
-                        @include phones {
-                            display: flex;
+                        @include mobile {
+                            text-align: center;
                         }  
                     }
-                    p:nth-child(2) {
-                        @include mobile {
-                            display: none;
-                        }
-                        @include phones {
-                            display: flex;
-                        }
-                    }
+                   
                 }
 
                 .links {
@@ -158,9 +153,14 @@
                     display: flex;
                     flex-direction: column;
                     padding-right: 8%;
+                    @include tablet {
+                        padding-right: 2%;
+                        align-items: baseline;
+                    }
                     @include mobile {
                         width: 70%;
                         padding-right: 0%;
+                        align-items: center;
                     }
                     @include phones {
                         width: 100%;

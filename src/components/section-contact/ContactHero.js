@@ -1,6 +1,7 @@
 import React from 'react'
 import "./ContactHero.scss"
 import { Form, Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const ContactHero = () => {
   return (
@@ -23,6 +24,10 @@ const ContactHero = () => {
             <h3>Hardware Development</h3>
         </div>
       </div>
+      <Helmet>
+        <title>Eryeol-Inc Contact Page</title>
+        <meta name="description" content="This is the contact page of Eryeol Incorporation official website. Contact us and let's discuss business." />
+      </Helmet>
       
     </div>
   )

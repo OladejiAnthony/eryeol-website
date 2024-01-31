@@ -1,6 +1,7 @@
 import React from 'react'
 import  "../Hero/Hero.scss"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 //import {motion} from "framer-motion"
 
 const LinkBtn = (
@@ -54,6 +55,11 @@ const Hero = () => {
         </p>
         {LinkBtn}
       </div>
+
+      <Helmet>
+        <title>Eryeol-Inc HomePage</title>
+        <meta name="description" content="This is Eryeol Incorporation official website. We serve you with everything technology." />
+      </Helmet>
     </div>
   )
 }

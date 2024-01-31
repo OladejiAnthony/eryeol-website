@@ -2,6 +2,7 @@ import React from 'react'
 import "./ServiceHero.scss"
 import { Link } from 'react-router-dom'
 import Arrow from "../../image/black-arrow.svg"
+import { Helmet } from 'react-helmet'
 
 const ServiceHero = () => {
 
@@ -29,6 +30,11 @@ const ServiceHero = () => {
           </svg> */}
         </a>
       </div>
+
+      <Helmet>
+        <title>Services Page</title>
+        <meta name="description" content="Unlocking Possibilities, Delivering Excellence." />
+      </Helmet>
     </div>
   )
 }

@@ -9,6 +9,7 @@ import WFooterHead from "../footer/WFooterHead"
 import WhiteFooter from '../footer/WhiteFooter'
 //import Testimonials from './Testimonials'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 
 const AboutHero = () => {
@@ -26,6 +27,11 @@ const AboutHero = () => {
       {/* <Awards /> */}
       <WFooterHead />
       <WhiteFooter />
+
+      <Helmet>
+        <title>About Us</title>
+        <meta name="description" content="Eryeol Incorporation is born of Passion, driven by Innovation for everything technology." />
+      </Helmet>
     </div>
     
   )

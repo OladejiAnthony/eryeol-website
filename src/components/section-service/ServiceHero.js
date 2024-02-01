@@ -32,7 +32,7 @@ const ServiceHero = () => {
       </div>
 
       <Helmet>
-        <title>Services Page</title>
+        <title>Eryeol-Inc Services Page</title>
         <meta name="description" content="Unlocking Possibilities, Delivering Excellence." />
       </Helmet>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ContactHero.scss"
-import { Form, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 const ContactHero = () => {

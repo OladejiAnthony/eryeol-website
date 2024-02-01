@@ -29,7 +29,7 @@ const AboutHero = () => {
       <WhiteFooter />
 
       <Helmet>
-        <title>About Us</title>
+        <title>Eryeol-Inc About Us</title>
         <meta name="description" content="Eryeol Incorporation is born of Passion, driven by Innovation for everything technology." />
       </Helmet>
     </div>

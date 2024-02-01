@@ -59,6 +59,8 @@ const Hero = () => {
       <Helmet>
         <title>Eryeol-Inc HomePage</title>
         <meta name="description" content="This is Eryeol Incorporation official website. We serve you with everything technology." />
+        <meta property="og:title" content="Eryeol Website" />
+      <meta property="og:description" content="This is Eryeol Incorporation official website." />
       </Helmet>
     </div>
   )

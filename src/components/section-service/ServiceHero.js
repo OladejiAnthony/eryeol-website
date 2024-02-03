@@ -1,8 +1,7 @@
 import React from 'react'
 import "./ServiceHero.scss"
-import { Link } from 'react-router-dom'
 import Arrow from "../../image/black-arrow.svg"
-import { Helmet } from 'react-helmet'
+import SEO from '../../SEO/SEO'
 
 const ServiceHero = () => {
 
@@ -14,6 +13,12 @@ const ServiceHero = () => {
 
   return (
     <div className='service-hero'>
+      <SEO
+        title="Eryeol Services"
+        description="Explore our diverse array of services, from advanced AI solutions to sustainable tech. Whether you are seeking innovative software, smart devices, or groundbreaking technologies, discover how our services can elevate your experience."
+        keywords="Technology, Tech products, Electronics, Smart device manufacturing, Next-gen telecommunications, AI and machine learning services, mobile, internet of things, renewable enrgy, cloud computing, virtual reality, augumented reality, cyber security, data protection."
+        url='https://www.eryeol.com/services'
+      />
       <div className='container'>
         {LinkBtn}
         <div className='text-box'>
@@ -30,11 +35,6 @@ const ServiceHero = () => {
           </svg> */}
         </a>
       </div>
-
-      <Helmet>
-        <title>Eryeol-Inc Services Page</title>
-        <meta name="description" content="Unlocking Possibilities, Delivering Excellence." />
-      </Helmet>
     </div>
   )
 }

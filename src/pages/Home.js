@@ -8,29 +8,38 @@ import AboutPage from '../components/section-home/AboutPage'
 //import TestiPage from '../components/section-home/TestiPage'
 import Footer from '../components/footer/Footer'
 import FootHead from '../components/footer/FootHead'
-import { Helmet } from 'react-helmet'
+
+import SEO from '../SEO/SEO';
 
 
 function Home() {
-  const ogData = {
-    title: 'Eryeol Incorporation',
-    description: 'This is Eryeol Incorporation official website. We serve you with everything technology.',
-    url: 'https://www.eryeol.com',
-    siteName: 'Eryeol',
-  };
+ 
+  // const ogData = {
+  //   title: 'Eryeol Incorporation',
+  //   description: 'This is Eryeol Incorporation official website. We serve you with everything technology.',
+  //   url: 'https://www.eryeol.com',
+  //   siteName: 'Eryeol',
+  // };
   
 
   return (
     
     <section className='homePage'>
-      <Helmet>
-        {/* Open Graph Meta Tags */}
+      <SEO
+        title="Eryeol Home"
+        description="Dive into the world of next-gen technology with us at Eryeol, where innovation meets practicality. Inspired by tech giants, we offer a range of cutting-edge products and services designed to propel you into the future. Discover how we are shaping tomorrow, today."
+        keywords="Technology, Tech products, Electronics, Smart device manufacturing, Next-gen telecommunications, AI and machine learning services, mobile, internet of things, renewable enrgy, cloud computing, virtual reality, augumented reality, cyber security, data protection."
+        url='https://www.eryeol.com'
+      />
+      {/* <Helmet>
+        // Open Graph Meta Tags 
         <meta property="og:title" content={ogData.title} />
         <meta property="og:description" content={ogData.description} />
         <meta property="og:url" content={ogData.url} />
         <meta property="og:site_name" content={ogData.siteName} />
         <meta name="description" content={ogData.description} />
-      </Helmet>
+      </Helmet> 
+      */}
 
       <div className='bg-img'>
         <Navbar />

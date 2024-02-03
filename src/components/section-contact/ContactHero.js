@@ -1,11 +1,19 @@
 import React from 'react'
 import "./ContactHero.scss"
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet'
+import SEO from '../../SEO/SEO';
+
 
 const ContactHero = () => {
+
   return (
     <div className='contact-wrapper'>
+      <SEO
+        title="Eryeol Contact"
+        description="Get in touch with us to find out how our technology solutions, inspired by the best in the industry, can help you or your business thrive. Whether you have a question, need support, or are looking to collaborate, we are here to help you navigate the future of tech."
+        keywords="Technology, Tech products, Electronics, Smart device manufacturing, Next-gen telecommunications, AI and machine learning services, mobile, internet of things, renewable enrgy, cloud computing, virtual reality, augumented reality, cyber security, data protection."
+        url='https://www.eryeol.com/contact'
+      />
       <div className='c-top'> 
         <Link to="/contact">Get in Touch</Link>
         <h2>Ready to Elevate Your Digital Presence? Let's Connect and Conquer</h2>
@@ -24,10 +32,6 @@ const ContactHero = () => {
             <h3>Hardware Development</h3>
         </div>
       </div>
-      <Helmet>
-        <title>Eryeol-Inc Contact Page</title>
-        <meta name="description" content="This is the contact page of Eryeol Incorporation official website. Contact us and let's discuss business." />
-      </Helmet>
       
     </div>
   )

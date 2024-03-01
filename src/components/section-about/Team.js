@@ -6,6 +6,7 @@ import am from "../../image/jessie_1.svg"
 import aaw from "../../image/blacki.svg"
 import td from "../../image/td.svg"
 import todd from "../../image/todd.svg"
+import adewumi from "../../image/Adewusi-blessing.png"
 
 const Team = () => {
   return (
@@ -58,6 +59,14 @@ const Team = () => {
                         <p>Software Engineer</p>
                     </div>
                     <img src={td} alt='image' />
+                </div>
+                <div className='item-5'>
+                    <div>
+                        <h3>Adewumi</h3>
+                        <h3>Blessing Gloria</h3>
+                        <p>Director Environmental Policy, Social and Health</p>
+                    </div>
+                    <img src={adewumi} alt='image' />
                 </div>
                 
           {/*      <div className='item-2'>

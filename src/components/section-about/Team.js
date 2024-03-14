@@ -4,7 +4,7 @@ import "./Team.scss"
 import aam from "../../image/fash_1.svg"
 import am from "../../image/jessie_1.svg"
 import aaw from "../../image/blacki.svg"
-import td from "../../image/td.svg"
+import td from "../../image/tony.svg"
 import todd from "../../image/todd.svg"
 import adewumi from "../../image/Adewusi-blessing.png"
 
@@ -62,7 +62,7 @@ const Team = () => {
                 </div>
                 <div className='item-5'>
                     <div>
-                        <h3>Adewumi</h3>
+                        <h3>Adewusi </h3>
                         <h3>Blessing Gloria</h3>
                         <p>Director Environmental Policy, Social and Health</p>
                     </div>
